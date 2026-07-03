@@ -1,6 +1,6 @@
 import {Logging, api} from './proxy.mjs';
 import * as animations from './macros/animations.mjs';
-import {generic, modern} from './macros.mjs';
+import {all, generic, legacy, modern} from './macros.mjs';
 Hooks.once('i18nInit', () => {
 
 });
@@ -25,7 +25,7 @@ Hooks.once('catReady', () => {
         source: 'chris-premades',
         identifier
     }));
-    const data = [...Object.entries(generic), ...Object.entries(modern)];
+    const data = [...Object.entries(all), ...Object.entries(generic),...Object.entries(legacy), ...Object.entries(modern)];
     data.forEach(([identifier, value]) => {
         const functionData = {
             source: 'chris-premades',
@@ -39,24 +39,47 @@ Hooks.once('catReady', () => {
             value.scales.forEach(i => {
                 api.registerScale({
                     source: 'chris-premades',
-                    rules: '2024',
+                    rules: value.rules ?? 'all',
                     identifier: i.identifier,
+                    classIdentifier: i.classIdentifier,
                     data: i.data
                 });
             });
         }
     });
     api.registerSourceName('chris-premades', 'Cauldron of Plentiful Resources');
+    const configsAll = {};
+    const notesAll = {};
+    const versionsAll= {};
+    const scalesAll = {};
+    Object.entries(all).map(([identifier, value]) => {
+        if (value.config) configsAll[identifier] = value.config;
+        if (value.notes) notesAll[identifier] = value.notes;
+        if (value.version) versionsAll[identifier] = value.version;
+        if (value.scales) scalesAll[identifier] = value.scales.map(i => ({source: 'chris-premades', identifier: i.identifier, classIdentifier: i.classIdentifier, rules: 'all'}));
+    });
     const configs2024 = {};
+    const notes2024 = {};
     const versions2024 = {};
     const scales2024 = {};
     Object.entries(modern).map(([identifier, value]) => {
         if (value.config) configs2024[identifier] = value.config;
+        if (value.notes) notes2024[identifier] = value.notes;
         if (value.version) versions2024[identifier] = value.version;
         if (value.scales) scales2024[identifier] = value.scales.map(i => ({source: 'chris-premades', identifier: i.identifier, classIdentifier: i.classIdentifier, rules: '2024'}));
     });
+    const configs2014 = {};
+    const notes2014 = {};
+    const versions2014 = {};
+    const scales2014 = {};
+    Object.entries(legacy).map(([identifier, value]) => {
+        if (value.config) configs2014[identifier] = value.config;
+        if (value.notes) notes2014[identifier] = value.notes;
+        if (value.version) versions2014[identifier] = value.version;
+        if (value.scales) scales2014[identifier] = value.scales.map(i => ({source: 'chris-premades', identifier: i.identifier, classIdentifier: i.classIdentifier, rules: '2014'}));
+    });
     const packs = packIds.map(i => game.packs.get(i));
     packs.forEach(pack => {
-        api.registerAutomationCompendium(pack, {configs2024, versions2024, scales2024, source: 'chris-premades'});
+        api.registerAutomationCompendium(pack, {configsAll, notesAll, versionsAll, scalesAll, configs2024, notes2024, versions2024, scales2024, configs2014, notes2014, versions2014, scales2014, source: 'chris-premades'});
     });
 });
