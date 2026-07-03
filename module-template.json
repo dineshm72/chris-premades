@@ -93,8 +93,47 @@
       }
     ]
   },
-  "packs": [],
-  "packFolders": [],
+  "packs": [
+    {
+      "name": "CPRClassFeatures",
+      "label": "CPR Class Features",
+      "path": "packs/cpr-class-features",
+      "type": "Item",
+      "module": "chris-premades"
+    },
+    {
+      "name": "CPRClassFeatures2024",
+      "label": "CPR Class Features (2024)",
+      "path": "packs/cpr-class-features-2024",
+      "type": "Item",
+      "module": "chris-premades"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Cauldron of Plentiful Resources",
+      "sorting": "a",
+      "color": "#348f2d",
+      "folders": [
+        {
+          "name": "2014",
+          "sorting": "a",
+          "color": "#348f2d",
+          "packs": [
+            "CPRClassFeatures"
+          ]
+        },
+        {
+          "name": "2024",
+          "sorting": "a",
+          "color": "#348f2d",
+          "packs": [
+            "CPRClassFeatures2024"
+          ]
+        }
+      ]
+    }
+  ],
   "changelog": "https://github.com/chrisk123999/chris-premades/blob/master/CHANGELOG.md",
   "url": "https://github.com/chrisk123999/chris-premades/",
   "manifest": "#{MANIFEST}#",

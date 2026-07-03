@@ -24,9 +24,9 @@ jobs:
     # Install dependencies
     - run: npm ci
     
-    # Compendiums are currently non-existent
-    #- name: Build Compendiums
-    #  run: npm run buildCompendiums
+    # Compendiums
+    - name: Build Compendiums
+      run: npm run buildCompendiums
       
     - name: Webpack build
       run: npm run build
