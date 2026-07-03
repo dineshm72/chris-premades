@@ -123,7 +123,15 @@
                     "Reaction": "Use a reaction?"
                 }
             },
+            "Legacy": {
+                "Rage": {
+                    "EndEarly": "{actorName} has not attacked an enemy or taken damage since their last turn. Remove Rage?"
+                }
+            },
             "Modern": {
+                "Rage": {
+                    "EndEarly": "{actorName} has not attacked an enemy, forced an enemy to make a save, or continued their rage since their last turn. Remove Rage?"
+                },
                 "RendMind": {
                     "RestoreAndUse": "Restore and use {item}?"
                 },
