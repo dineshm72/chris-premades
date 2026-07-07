@@ -20,7 +20,7 @@ async function isDamaged({ditem, document: rageEffect, targetToken}) {
     if (ditem.newHP >= ditem.oldHP) return;
     await setTurn(combatData, rageEffect);
 }
-async function turnEnd({combatant, document: rageEffect, round, turn}) {
+async function turnEnd({combatant, document: rageEffect, round}) {
     const turnStamp = genericUtils.getProperty(rageEffect, 'flags.chris-premades.rage.turn');
     if (!turnStamp) return await setTurn(tokenUtils.getCombatData(combatant.token), rageEffect);
     if (round - turnStamp.currentRound < 1) return;

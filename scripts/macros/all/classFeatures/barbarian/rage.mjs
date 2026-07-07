@@ -14,26 +14,24 @@ async function preChecks({workflow}) {
 function rageEffect({effect, options, updates}) {
     const activity = effectUtils.getOriginActivitySync(effect);
     if (!activity) return;
-    const configs = {};
+    let vae, unhideActivities, specialDuration;
     const rules = documentUtils.getRules(activity.item) || '2014';
-    dataUtils.setRules(configs, rules);
-    genericUtils.setProperty(configs, 'flags.chris-premades.rage.bonus', automationUtils.getConfigValue(activity.item, 'rageBonus'));
-    genericUtils.setProperty(configs, 'flags.chris-premades.rage.allowConcentration', automationUtils.getConfigValue(activity.item, 'allowConcentration'));
-    genericUtils.setProperty(configs, 'flags.chris-premades.rage.allowSpellcasting', automationUtils.getConfigValue(activity.item, 'allowSpellcasting'));
-    if (automationUtils.getConfigValue(activity.item, 'allowHeavyArmor'))
-        genericUtils.setProperty(configs, 'flags.cat.specialDuration', (effect.flags.cat?.specialDuration ?? []).filter(d => d !== 'heavy'));
-    const animationSetting = automationUtils.getConfigValue(activity.item, 'animation');
-    if (animationSetting) genericUtils.setProperty(configs, 'flags.cat.animation', {create: animationSetting, delete: animationSetting});
+    const animation = automationUtils.getConfigValue(activity.item, 'animation');
     const secondActivity = activity.item.system.activities.getByType('utility').find(a => a.id !== activity.id);
+    if (automationUtils.getConfigValue(activity.item, 'allowHeavyArmor'))
+        specialDuration = (effect.flags.cat?.specialDuration ?? []).filter(d => d !== 'heavy');
     if (secondActivity) {
-        genericUtils.setProperty(configs, 'flags.cat.unhideActivities', [secondActivity.identifier]);
-        genericUtils.setProperty(configs, 'flags.cat.vae.buttons', [{
+        vae = [{
             type: 'use',
             name: secondActivity.name,
             itemIdentifier: activity.item.system.identifier,
             activityIdentifier: secondActivity.identifier
-        }]);
+        }];
+        unhideActivities = [secondActivity.identifier];
     }
+    const configs = dataUtils.buildEffectData({}, {createAnimation: animation, deleteAnimation: animation, unhideActivities, rules, specialDuration, vae});
+    for (const config of ['bonus', 'allowConcentration', 'allowSpellcasting'])
+        genericUtils.setProperty(configs, 'flags.chris-premades.rage.' + config, automationUtils.getConfigValue(activity.item, config));
     effect.updateSource(configs);
     automationUtils.calledEventSync('preCreateRageEffect', activity.actor, {
         canOverlap: true, 
@@ -121,7 +119,7 @@ export const rage = {
             label: 'CHRISPREMADES.Config.Animation',
             category: 'visuals'
         },
-        rageBonus: {
+        bonus: {
             default: '@scale.barbarian.rage-damage',
             type: 'text',
             label: 'CHRISPREMADES.Config.Formula',
