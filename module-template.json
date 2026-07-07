@@ -95,9 +95,16 @@
   },
   "packs": [
     {
-      "name": "CPRClassFeatures",
-      "label": "CPR Class Features",
-      "path": "packs/cpr-class-features",
+      "name": "CPRClassFeaturesAll",
+      "label": "CPR Class Features (All Rules)",
+      "path": "packs/cpr-class-features-all",
+      "type": "Item",
+      "module": "chris-premades"
+    },
+    {
+      "name": "CPRClassFeatures2014",
+      "label": "CPR Class Features (2014)",
+      "path": "packs/cpr-class-features-2014",
       "type": "Item",
       "module": "chris-premades"
     },
@@ -116,11 +123,19 @@
       "color": "#348f2d",
       "folders": [
         {
+          "name": "All Rules",
+          "sorting": "a",
+          "color": "#348f2d",
+          "packs": [
+            "CPRClassFeaturesAll"
+          ]
+        },
+        {
           "name": "2014",
           "sorting": "a",
           "color": "#348f2d",
           "packs": [
-            "CPRClassFeatures"
+            "CPRClassFeatures2014"
           ]
         },
         {
