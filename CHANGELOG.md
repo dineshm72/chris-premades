@@ -1,5 +1,9 @@
 # 1.5.40 Release:
 ## Bug Fixes:
+- Battering Roots
+
+# 1.5.40 Release:
+## Bug Fixes:
 - Shake It Off
 - Heroic Inspiration
 - Martial Arts (legacy and modern)
