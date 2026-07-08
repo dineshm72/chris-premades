@@ -55,11 +55,7 @@
      "riders": {
       "statuses": []
      },
-     "dependents": [
-      {
-       "uuid": "Actor.4F5kQIpxwyb6rykH.ActiveEffect.wRtnBgtveRxliWxc"
-      }
-     ]
+     "dependents": []
     },
     "chris-premades": {
      "noAnimation": false,
@@ -191,7 +187,17 @@
      "override": false
     },
     "consumption": {
-     "targets": [],
+     "targets": [
+      {
+       "type": "itemUses",
+       "value": "1",
+       "target": "",
+       "scaling": {
+        "allowed": false,
+        "max": ""
+       }
+      }
+     ],
      "scaling": {
       "allowed": false,
       "max": ""

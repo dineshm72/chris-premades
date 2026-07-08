@@ -119,11 +119,7 @@
           "riders": {
             "statuses": []
           },
-          "dependents": [
-            {
-              "uuid": "Actor.oGXY1CS6ZXBzNHP0.ActiveEffect.rqwnydBDfzHZVZQd"
-            }
-          ]
+          "dependents": []
         },
         "chris-premades": {
           "noAnimation": false,

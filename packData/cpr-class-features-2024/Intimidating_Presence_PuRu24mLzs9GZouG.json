@@ -5,7 +5,7 @@
     {
       "name": "Intimidating Presence",
       "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
-      "origin": "Actor.yy1I4W4hqhw1yaiM.Item.33R6b4C53wZz3LdM",
+      "origin": null,
       "transfer": false,
       "_id": "jrVGjhi5tcCklGHd",
       "type": "base",
@@ -227,11 +227,7 @@
         "activity": [],
         "effect": []
       },
-      "dependents": [
-        {
-          "uuid": "Scene.iGwlIbnzeJk0iHC2.Token.bUQ7ipuEQf8Wt6bb.Actor.szyevsXsdQSq5snz.ActiveEffect.2CAqWsoChoQ2u73w"
-        }
-      ]
+      "dependents": []
     },
     "midiProperties": {
       "autoFailFriendly": false,

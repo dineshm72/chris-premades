@@ -5,7 +5,7 @@
     {
       "name": "Nature's Wrath",
       "img": "icons/magic/nature/root-vine-beanstolk-green.webp",
-      "origin": "Actor.VyBqfjbQe2UMzVBW.Item.JTbri4Q2t7SICFkU",
+      "origin": null,
       "transfer": false,
       "_id": "teBKkh0U5ZnqakiO",
       "type": "base",

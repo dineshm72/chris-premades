@@ -1,10 +1,11 @@
-import { actorUtils, combatUtils, documentUtils, effectUtils, genericUtils } from '../../../../proxy.mjs';
+import { actorUtils, combatUtils, documentUtils, effectUtils, genericUtils, workflowUtils } from '../../../../proxy.mjs';
 async function move({document, token}) {
     if (!token.inCombat) return;
     if (!combatUtils.isOwnTurn(token) || !document.system.uses.value) return;
-    await documentUtils.update(document, {'system.uses.spent': document.system.uses.spent + 1});
+    await workflowUtils.completeItemUse(document, [], {options: {workflowOptions: {steadyAimLockout: true}}});
 }
 async function use({document, workflow}) {
+    if (workflow.workflowOptions?.steadyAimLockout) return;
     if (actorUtils.getItemByIdentifier(workflow.actor, 'infiltration-expertise')) return;
     const sourceEffect = documentUtils.getEffectByIdentifier(document, 'steady-aim-movement');
     if (!sourceEffect) return;

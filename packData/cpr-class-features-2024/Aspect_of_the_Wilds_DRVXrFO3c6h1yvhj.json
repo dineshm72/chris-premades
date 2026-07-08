@@ -532,11 +532,7 @@
         "effect": []
       },
       "advancementOrigin": "nwupzjujWuejv7P9",
-      "dependents": [
-        {
-          "uuid": "Actor.yy1I4W4hqhw1yaiM.ActiveEffect.HFm6E9KzBw6gOcsC"
-        }
-      ]
+      "dependents": []
     },
     "cat": {
       "automation": {
