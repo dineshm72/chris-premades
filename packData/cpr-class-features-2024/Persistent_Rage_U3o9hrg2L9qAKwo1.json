@@ -158,14 +158,14 @@
         "combat": [
           {
             "source": "chris-premades",
-            "rules": "2024",
+            "rules": "all",
             "identifier": "persistent-rage"
           }
         ],
         "called": [
           {
             "source": "chris-premades",
-            "rules": "2024",
+            "rules": "all",
             "identifier": "persistent-rage"
           }
         ]

@@ -1,8 +1,6 @@
 // Barbarian
 export {dangerSense as 'danger-sense'} from './modern/classFeatures/barbarian/dangerSense.mjs';
 export {extendRage, keepRage} from './modern/classFeatures/barbarian/rage.mjs';
-export {persistentRage as 'persistent-rage'} from './modern/classFeatures/barbarian/persistentRage.mjs';
-export {fastMovement as 'fast-movement'} from './modern/classFeatures/barbarian/fastMovement.mjs';
 export {intimidatingPresence as 'intimidating-presence'} from './modern/classFeatures/barbarian/berserker/intimidatingPresence.mjs';
 export {unarguableWizardry as 'unarguable-wizardry'} from './modern/classFeatures/barbarian/muscleWizard/unarguableWizardry.mjs';
 export {aspectOfTheWilds as 'aspect-of-the-wilds'} from './modern/classFeatures/barbarian/wildHeart/aspectOfTheWilds.mjs';

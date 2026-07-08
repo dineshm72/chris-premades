@@ -13,7 +13,9 @@ export const lunarForm = {
         damageType: {
             default: 'radiant',
             type: 'select',
-            options: () => constants.damageTypeOptions(),
+            get options() {
+                return constants.damageTypeOptions();
+            },
             label: 'CHRISPREMADES.Config.DamageType',
             category: 'homebrew'
         }

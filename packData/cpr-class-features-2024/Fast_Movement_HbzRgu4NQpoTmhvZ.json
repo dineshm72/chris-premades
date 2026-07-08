@@ -64,7 +64,10 @@
           "rules": "modern"
         },
         "cat": {
-          "identifier": "fast-movement-effect"
+          "identifier": "fast-movement-effect",
+          "disableCondition": [
+            "heavy"
+          ]
         }
       },
       "description": "",
@@ -133,15 +136,6 @@
     "cat": {
       "automation": {
         "version": "2.0.0"
-      },
-      "macros": {
-        "item": [
-          {
-            "source": "chris-premades",
-            "rules": "2024",
-            "identifier": "fast-movement"
-          }
-        ]
       }
     }
   },

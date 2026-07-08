@@ -1,6 +1,6 @@
 import { actorUtils, combatUtils, documentUtils, effectUtils, genericUtils } from '../../../../proxy.mjs';
 async function move({document, token}) {
-    if (!combatUtils.inCombat()) return;
+    if (!token.inCombat) return;
     if (!combatUtils.isOwnTurn(token) || !document.system.uses.value) return;
     await documentUtils.update(document, {'system.uses.spent': document.system.uses.spent + 1});
 }

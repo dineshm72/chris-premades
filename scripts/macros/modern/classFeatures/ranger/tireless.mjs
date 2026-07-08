@@ -1,6 +1,5 @@
 import {documentUtils} from '../../../../proxy.mjs';
-async function short({document}) {
-    const actor = document.actor;
+async function short({actor}) {
     if (!actor) return;
     const exhaustion = actor.system.attributes.exhaustion;
     if (!exhaustion) return;

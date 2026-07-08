@@ -9,7 +9,7 @@ async function heal({document, workflow}) {
     if (!workflowUtils.getDamageTypes(workflow.damageRolls).has('healing')) return;
     const formula = 2 + castData.castLevel;
     await workflowUtils.bonusDamage(workflow, formula, {damageType: 'healing'});
-    await document.displayCard();
+    await workflowUtils.completeItemUse(document, [], {consumeUsage: false, consumeResources: false});
 }
 export const discipleOfLife = {
     name: 'Disciple of Life',

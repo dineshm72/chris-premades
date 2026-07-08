@@ -1,4 +1,4 @@
-import {activityUtils, documentUtils, effectUtils, genericUtils} from '../../../../../proxy.mjs';
+import {activityUtils, documentUtils, effectUtils} from '../../../../../proxy.mjs';
 async function use({document, workflow}) {
     const target = workflow.targets.first()?.actor ?? workflow.actor;
     const targetUuid = document.flags['chris-premades']?.blessingOfTheTrickster?.targetUuid;
@@ -7,8 +7,7 @@ async function use({document, workflow}) {
     if (effect) await documentUtils.deleteDocument(effect);
     const sourceEffect = document.effects.contents?.[0];
     if (!sourceEffect) return;
-    const effectData = genericUtils.duplicate(sourceEffect.toObject());
-    effectData.duration = activityUtils.getEffectDuration(workflow.activity);
+    const effectData = documentUtils.getEffectData(document, sourceEffect.id, {duration: activityUtils.getEffectDuration(workflow.activity)});
     const targetEffect = (await effectUtils.createEffects(target, [effectData]))[0];
     await documentUtils.setFlag(document, 'chris-premades', 'blessingOfTheTrickster.targetUuid', targetEffect.uuid);
 }

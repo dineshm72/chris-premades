@@ -1,4 +1,4 @@
-import {activityUtils, automationUtils, dialogUtils, documentUtils} from '../../../../proxy.mjs';
+import {activityUtils, automationUtils, dialogUtils, documentUtils, workflowUtils} from '../../../../proxy.mjs';
 async function attack({document, workflow}) {
     if (!workflow.item) return;
     const identifier = documentUtils.getIdentifier(workflow.item);
@@ -10,8 +10,7 @@ async function attack({document, workflow}) {
         if (!selection) return;
     }
     const activityData = activityUtils.getDamageModifiedActivityData(workflow.activity, '', {types: ['force']});
-    workflow.item = workflow.item.clone({['system.activities.' + workflow.activity.id]: activityData}, {keepId: true});
-    workflow.activity = workflow.item.system.activities.get(workflow.activity.id);
+    workflowUtils.setActivity(workflow, activityData);
 }
 export const empoweredStrikes = {
     name: 'Empowered Strikes',

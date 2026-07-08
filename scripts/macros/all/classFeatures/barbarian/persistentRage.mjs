@@ -9,18 +9,17 @@ async function combatStart({document}) {
 function modifyRage({data}) {
     const effect = data.effect;
     if (!effect) return;
-    const specialDuration = (effect.flags.cat?.specialDuration?.length ? effect.flags.cat.specialDuration : ['incapacitated', 'heavy'])
-        .map(d => d === 'incapacitated' ? 'unconscious' : d);
+    const specialDuration = effect.flags.cat?.specialDuration?.map(d => d === 'incapacitated' ? 'unconscious' : d);
+    const noUpkeep = effect.flags.cat?.macros?.combat?.filter(m => m.identifier !== 'keepRage');
     effect.updateSource({
-        'duration.value': 600,
-        'duration.units': 'seconds',
-        'flags.cat.specialDuration': specialDuration
+        'flags.cat.specialDuration': specialDuration,
+        'flags.cat.macros.combat': noUpkeep
     });
 }
 export const persistentRage = {
     name: 'Persistent Rage',
     version: '2.0.0',
-    rules: '2024',
+    rules: 'all',
     combat: [
         {
             pass: 'actorCombatStart',

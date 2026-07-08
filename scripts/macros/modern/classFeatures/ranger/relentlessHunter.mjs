@@ -1,6 +1,5 @@
 import {documentUtils, rollUtils} from '../../../../proxy.mjs';
-async function saveBonus({document, config, roll}) {
-    const actor = document.actor;
+async function saveBonus({actor, config, roll}) {
     if (!config.isConcentration) return;
     if (!actor.concentration.items.some(i => documentUtils.getIdentifier(i) === 'hunters-mark')) return;
     const target = config.target;

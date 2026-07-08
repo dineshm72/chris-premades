@@ -1,10 +1,9 @@
-import {actorUtils, documentUtils, workflowUtils} from '../../../../proxy.mjs';
+import {documentUtils, workflowUtils} from '../../../../proxy.mjs';
 async function use({document}) {
     if (!document.actor.system.attributes.inspiration) await documentUtils.update(document.actor, {'system.attributes.inspiration': true});
 }
-async function turnStart({document}) {
-    const token = actorUtils.getFirstToken(document.actor);
-    await workflowUtils.syntheticItemRoll(document, token ? [token] : []);
+async function turnStart({document, token}) {
+    await workflowUtils.completeItemUse(document, token ? [token.document ?? token] : []);
 }
 export const heroicWarrior = {
     name: 'Heroic Warrior',

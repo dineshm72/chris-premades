@@ -7,7 +7,7 @@ async function damage({document, workflow}) {
     const ability = automationUtils.getConfigValue(document, 'ability');
     const modifier = workflow.actor.system.abilities[ability].mod;
     await workflowUtils.bonusDamage(workflow, modifier, {damageType: workflow.defaultDamageType});
-    await document.displayCard();
+    await workflowUtils.completeItemUse(document, [], {consumeUsage: false, consumeResources: false});
 }
 export const potentSpellcasting = {
     name: 'Blessed Strikes: Potent Spellcasting',
@@ -30,7 +30,9 @@ export const potentSpellcasting = {
         ability: {
             default: 'wis',
             type: 'select',
-            options: () => constants.abilityOptions(),
+            get options() {
+                return constants.abilityOptions();
+            },
             label: 'CHRISPREMADES.Config.Ability',
             category: 'homebrew'
         }
