@@ -40,7 +40,7 @@ export const magicMissile = {
     },
     inputs: ['sourceToken', 'targetToken', 'options'],
     requirements: ['JB2A_DnD5e'],
-    type: 'rangedAttack',
+    category: 'rangedAttack',
     get config() {
         return {
             color: {

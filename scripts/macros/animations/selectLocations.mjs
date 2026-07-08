@@ -57,7 +57,7 @@ export const selectLocations = {
     },
     requirements: ['animated-spell-effects-cartoon', 'jb2a_patreon'],
     inputs: ['token', 'range', 'options'],
-    type: 'crosshair',
+    category: 'crosshair',
     config: {
         dark: {
             label: 'CHRISPREMADES.Config.Dark',

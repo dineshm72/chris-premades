@@ -167,7 +167,7 @@ export const cunningActionDisengage = {
     },
     inputs: ['token', 'positions'],
     requirements: ['jb2a_patreon', 'animated-spell-effects-cartoon'],
-    type: 'classFeature',
+    category: 'classFeature',
     get credits() {
         return [animationUtils.getEskieCredits()];
     }

@@ -145,7 +145,7 @@ export const sneakAttack = {
     },
     inputs: ['sourceToken', 'targetToken', 'attackType'],
     requirements: ['jb2a_patreon', 'animated-spell-effects-cartoon'],
-    type: 'classFeature',
+    category: 'classFeature',
     get credits() {
         return [animationUtils.getEskieCredits()];
     }

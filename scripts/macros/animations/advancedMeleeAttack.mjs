@@ -334,7 +334,7 @@ export const advancedMeleeAttack = {
     },
     inputs: ['sourceToken', 'targetTokens', 'options'],
     requirements: ['jb2a_patreon'],
-    type: 'weaponAttacks',
+    category: 'weaponAttacks',
     get config() {
         return {
             weapon: {

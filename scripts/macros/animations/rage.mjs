@@ -265,7 +265,7 @@ export const rageSaiyan = {
     },
     inputs: ['document', 'sourceToken'],
     requirements: ['jb2a_patreon'],
-    type: 'classFeature',
+    category: 'classFeature',
     get credits() {
         return [animationUtils.getEskieCredits()];
     }

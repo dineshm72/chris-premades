@@ -824,7 +824,7 @@ function createSummon(name, macro, requirements = []) {
         },
         requirements: requirements,
         inputs: ['summon', 'location', 'token'],
-        type: 'summon',
+        category: 'summon',
         config: {
             sound: {
                 label: 'CHRISPREMADES.Config.Generic.Sound',
