@@ -38,8 +38,7 @@
     }
   },
   "flags": {
-    "dnd5e": { 
-    },
+    "dnd5e": {},
     "cat": {
       "macros": {
         "save": [
