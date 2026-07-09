@@ -163,14 +163,14 @@ export const scorchingRay = {
             color: {
                 default: 'orange',
                 type: 'select',
-                label: 'CHRISPREMADES.Config.Generic.Color',
+                label: 'CHRISPREMADES.Config.Color',
                 options: animationUtils.buildColorOptions(colorMap, {
                     freeColors: ['orange'],
                     labelPrefix: 'CHRISPREMADES.Config.Colors.'
                 })
             },
             sound: {
-                label: 'CHRISPREMADES.Config.Generic.Sound',
+                label: 'CHRISPREMADES.Config.Sound',
                 type: 'file',
                 fileType: 'audio',
                 default: ''

@@ -1,3 +1,4 @@
+// ** Class Features
 // Barbarian
 export {dangerSense as 'danger-sense'} from './modern/classFeatures/barbarian/dangerSense.mjs';
 export {extendRage, keepRage} from './modern/classFeatures/barbarian/rage.mjs';
@@ -36,3 +37,5 @@ export {tireless} from './modern/classFeatures/ranger/tireless.mjs';
 export {improvedCunningStrike as 'improved-cunning-strike'} from './modern/classFeatures/rogue/improvedCunningStrike.mjs';
 export {sneakAttack as 'sneak-attack'} from './modern/classFeatures/rogue/sneak-attack.mjs';
 export {steadyAim as 'steady-aim'} from './modern/classFeatures/rogue/steadyAim.mjs';
+// ** Spells
+export {chromaticOrb as 'chromatic-orb'} from './modern/spells/chromaticOrb.mjs';

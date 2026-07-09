@@ -340,7 +340,7 @@ export const advancedMeleeAttack = {
             weapon: {
                 default: 'shortsword',
                 type: 'select',
-                label: 'CHRISPREMADES.Config.Generic.Weapon',
+                label: 'CHRISPREMADES.Config.Weapon',
                 options: animationUtils.buildColorOptions(configWeaponMap, {
                     labelPrefix: 'CHRISPREMADES.Config.Weapons.'
                 })
@@ -376,13 +376,13 @@ export const advancedMeleeAttack = {
                 label: 'CHRISPREMADES.Animations.AdvancedMeleeAttack.EnableShake'
             },
             soundMelee: {
-                label: 'CHRISPREMADES.Config.Generic.SoundMelee',
+                label: 'CHRISPREMADES.Config.SoundMelee',
                 type: 'file',
                 fileType: 'audio',
                 default: ''
             },
             soundRanged: {
-                label: 'CHRISPREMADES.Config.Generic.SoundRanged',
+                label: 'CHRISPREMADES.Config.SoundRanged',
                 type: 'file',
                 fileType: 'audio',
                 default: ''
@@ -390,7 +390,7 @@ export const advancedMeleeAttack = {
             soundDelay: {
                 default: 300,
                 type: 'number',
-                label: 'CHRISPREMADES.Config.Generic.SoundDelay'
+                label: 'CHRISPREMADES.Config.SoundDelay'
             },
             impact: {
                 label: 'CHRISPREMADES.Animations.AdvancedMeleeAttack.ImpactFile',

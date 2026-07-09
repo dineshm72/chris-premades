@@ -94,9 +94,7 @@ async function damage({document, workflow}) {
         if (selection) workflowUtils.setWorkflowProperty(workflow, 'rendMind.use', true);
     }
     const animationSetting = automationUtils.getConfigValue(document, 'animation');
-    console.log(animationSetting);
     const animation = animationUtils.getAnimation(animationSetting);
-    console.log(animation);
     if (!animation) return;
     const attackType = workflow.rangeDetails.range > 5 ? 'ranged' : workflow.defaultDamageType;
     await animation.macros.attack(workflow.token.document, targetToken, attackType);
