@@ -114,6 +114,13 @@
       "path": "packs/cpr-class-features-2024",
       "type": "Item",
       "module": "chris-premades"
+    },
+    {
+      "name": "CPRFeatFeatures2024",
+      "label": "CPR Feat Features (2024)",
+      "path": "packs/cpr-feat-features-2024",
+      "type": "Item",
+      "module": "chris-premades"
     }
   ],
   "packFolders": [
@@ -143,7 +150,8 @@
           "sorting": "a",
           "color": "#348f2d",
           "packs": [
-            "CPRClassFeatures2024"
+            "CPRClassFeatures2024",
+            "CPRFeatFeatures2024"
           ]
         }
       ]

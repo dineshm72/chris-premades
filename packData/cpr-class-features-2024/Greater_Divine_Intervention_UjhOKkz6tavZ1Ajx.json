@@ -1,0 +1,129 @@
+{
+  "_id": "UjhOKkz6tavZ1Ajx",
+  "name": "Greater Divine Intervention",
+  "type": "feat",
+  "effects": [
+    {
+      "name": "Divine Intervention Blocked",
+      "transfer": false,
+      "img": "icons/magic/light/beam-rays-yellow-blue.webp",
+      "_id": "Xggw4uJclVKwl03h",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.uses.recovery",
+            "value": [],
+            "priority": 20,
+            "type": "override"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "statuses": [],
+      "flags": {
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": true,
+          "stackable": "multi",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        },
+        "chris-premades": {
+          "noAnimation": false,
+          "conditions": [],
+          "specialDuration": [],
+          "info": {
+            "identifier": "greaterDivineInterventionRest"
+          },
+          "macros": {
+            "rest": [
+              "greaterDivineInterventionRest"
+            ]
+          },
+          "rules": "modern"
+        }
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!UjhOKkz6tavZ1Ajx.Xggw4uJclVKwl03h"
+    }
+  ],
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": null,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "greater-divine-intervention",
+    "source": {
+      "book": "PHB 2024",
+      "page": "",
+      "license": "",
+      "custom": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "advancement": [],
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 20,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "dnd5e": {
+      "advancementOrigin": "t57rY4j3LOKqpszq",
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "2.0.0"
+      }
+    }
+  },
+  "img": "icons/magic/light/beam-rays-yellow-blue.webp",
+  "folder": "zpnSU81c3nPjSzE1",
+  "_key": "!items!UjhOKkz6tavZ1Ajx"
+}

@@ -16,7 +16,7 @@ Hooks.once('ready', () => {
 Hooks.once('catInit', () => {
 
 });
-const validKeys = ['rules', 'aura', 'check', 'combat', 'effect', 'move', 'region', 'rest', 'save', 'skill', 'time', 'tool', 'roll', 'summon', 'generic', 'genericConfig', 'documents'];
+const validKeys = ['rules', 'aura', 'called', 'check', 'combat', 'effect', 'item', 'move', 'region', 'rest', 'save', 'skill', 'time', 'tool', 'roll', 'summon', 'generic', 'genericConfig', 'documents'];
 const ignoredPackIds = [];
 Hooks.once('catReady', () => {
     Object.entries(animations).forEach(([identifier, value]) => api.registerAnimation({

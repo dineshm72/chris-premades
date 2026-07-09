@@ -54,9 +54,13 @@
                 "Complex": "Complex",
                 "Simple": "Simple"
             },
+            "Ability": "Ability",
             "AttackActivity": "Attack Activity",
+            "Attacks": "Attacks",
+            "AutoApply": "Automatically Apply",
             "BlockingConditions": "Blocking Conditions",
             "ClassIdentifier": "Class Identifier",
+            "DamageType": "Damage Type",
             "Colors": {
                 "Blue": "Blue",
                 "Cycle": "Cycle",
@@ -78,6 +82,8 @@
             "CreateActivity": "Create Activity",
             "Dark": "Dark",
             "Formula": "Formula",
+            "Range": "Range",
+            "SimultaneousUses": "Simultaneous Uses",
             "Generic": {
                 "Color": "Color",
                 "Sound": "Sound",
@@ -123,7 +129,8 @@
                 "MultiSingleTarget": {
                     "Context": "How many? (Max: {totalTargets})",
                     "Reaction": "Use a reaction?"
-                }
+                },
+                "ConsumeItemToUse": "Consume {item} to use this feature?"
             },
             "Legacy": {
                 "DangerSense": "This save is from an effect you can see.",
@@ -132,16 +139,32 @@
                 }
             },
             "Modern": {
+                "Archdruid": {
+                    "NoSpellSlots": "You have no expended spell slots to restore!"
+                },
                 "Rage": {
                     "EndEarly": "{actorName} has not attacked an enemy, forced an enemy to make a save, or continued their rage since their last turn. Remove Rage?"
                 },
                 "RendMind": {
                     "RestoreAndUse": "Restore and use {item}?"
                 },
+                "GreaterDivineIntervention": {
+                    "RestFormula": "Rest Recovery Formula"
+                },
                 "SneakAttack": {
                     "Auto": "Automatically Use",
                     "UseAnotherCunningStrike": "Use another cunning strike?",
                     "UseCunningStrike": "Use cunning strike?"
+                },
+                "StalkersFlurry": {
+                    "IncludeSelf": "Include Self"
+                },
+                "UnarguableWizardry": {
+                    "Prompt": "Unarguable Wizardry"
+                },
+                "WildResurgence": {
+                    "WildShapeUses": "You still have Wild Shape uses remaining!",
+                    "NoSpellSlots": "You have no expended spell slots to restore!"
                 }
             }
         }

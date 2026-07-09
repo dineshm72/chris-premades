@@ -1,33 +1,32 @@
 {
-  "name": "Danger Sense",
+  "name": "Improved Cunning Strike",
   "type": "feat",
   "effects": [],
   "system": {
     "activities": {},
     "uses": {
       "spent": 0,
-      "recovery": [],
-      "max": ""
+      "recovery": []
     },
-    "advancement": {},
+    "advancement": [],
     "description": {
       "value": "",
       "chat": ""
     },
-    "identifier": "danger-sense",
+    "identifier": "improved-cunning-strike",
     "source": {
-      "book": "PHB",
+      "book": "PHB 2024",
       "page": "",
       "license": "",
       "custom": "",
-      "rules": "2014",
+      "rules": "2024",
       "revision": 1
     },
     "crewed": false,
     "enchant": {},
     "prerequisites": {
+      "level": 11,
       "items": [],
-      "level": 2,
       "repeatable": false
     },
     "properties": [],
@@ -38,21 +37,20 @@
     }
   },
   "flags": {
-    "dnd5e": {},
+    "dnd5e": {
+      "advancementOrigin": "DSrhBjkeeo3sLIdd",
+      "riders": {
+        "activity": []
+      }
+    },
     "cat": {
-      "macros": {
-        "save": [
-          {
-            "source": "chris-premades",
-            "rules": "2014",
-            "identifier": "danger-sense"
-          }
-        ]
+      "automation": {
+        "version": "2.0.0"
       }
     }
   },
-  "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
-  "folder": "oHVJeSGqBDErtjs9",
-  "_id": "ZV5IgMmblBhv5XgA",
-  "_key": "!items!ZV5IgMmblBhv5XgA"
+  "img": "icons/skills/melee/blade-tip-smoke-green.webp",
+  "folder": "oeHJD6UoRsmQIVlo",
+  "_id": "L98YJ0mjMpgNwBDv",
+  "_key": "!items!L98YJ0mjMpgNwBDv"
 }

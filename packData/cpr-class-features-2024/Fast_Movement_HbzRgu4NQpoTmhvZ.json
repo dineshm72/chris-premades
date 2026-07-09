@@ -1,0 +1,154 @@
+{
+  "name": "Fast Movement",
+  "type": "feat",
+  "effects": [
+    {
+      "name": "Fast Movement",
+      "statuses": [],
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": true,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": true,
+          "stackable": "noneNameOnly",
+          "disableCondition": "",
+          "showIcon": false,
+          "disableIncapacitated": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": []
+        },
+        "ddbimporter": {
+          "disabled": false,
+          "passive": true,
+          "itemId": 10292159,
+          "itemEntityTypeId": 12168134
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "chris-premades": {
+          "noAnimation": false,
+          "conditions": [],
+          "specialDuration": [],
+          "templateEffectActivities": [],
+          "info": {
+            "identifier": "fastMovementEffect"
+          },
+          "rules": "modern"
+        },
+        "cat": {
+          "identifier": "fast-movement-effect",
+          "disableCondition": [
+            "heavy"
+          ]
+        }
+      },
+      "description": "",
+      "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+      "_id": "Yna0C3QoawyfkvBF",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk",
+            "value": 10,
+            "priority": 10,
+            "type": "add"
+          }
+        ]
+      },
+      "origin": "Compendium.world.cpr-class-features-2024.Item.HbzRgu4NQpoTmhvZ",
+      "sort": 0,
+      "start": {
+        "combat": null,
+        "round": null,
+        "time": 1356,
+        "turn": null,
+        "combatant": null,
+        "initiative": null
+      },
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!HbzRgu4NQpoTmhvZ.Yna0C3QoawyfkvBF"
+    }
+  ],
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": [],
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "fast-movement",
+    "source": {
+      "book": "PHB 2024",
+      "page": "",
+      "license": "",
+      "custom": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "level": 5,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "dae": {
+      "alwaysActive": false,
+      "activeEquipped": false
+    },
+    "midi-qol": {
+      "removeAttackDamageButtons": "default",
+      "forceCEOff": true
+    },
+    "midiProperties": {
+      "confirmTargets": "default"
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      },
+      "advancementOrigin": "yVlZ8ysfvQ7psVLR"
+    },
+    "cat": {
+      "automation": {
+        "version": "2.0.0"
+      }
+    }
+  },
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "folder": "epodEYV6OzWsQdIP",
+  "_id": "HbzRgu4NQpoTmhvZ",
+  "_key": "!items!HbzRgu4NQpoTmhvZ"
+}
