@@ -1,4 +1,4 @@
-import {actorUtils, automationUtils, dataUtils, documentUtils, effectUtils, genericUtils, Logging, workflowUtils} from '../../../../proxy.mjs';
+import {actorUtils, automationUtils, documentUtils, effectUtils, genericUtils, Logging, workflowUtils} from '../../../../proxy.mjs';
 async function preChecks({workflow}) {
     if (workflow.actor.system.attributes.ac.equippedArmor?.system.type.value === 'heavy' && !automationUtils.getConfigValue(workflow.item, 'allowHeavyArmor')) {
         genericUtils.notify('CHRISPREMADES.Macros.All.Rage.HeavyArmor', {type: 'warn'});
@@ -8,44 +8,44 @@ async function preChecks({workflow}) {
     if (automationUtils.getConfigValue(workflow.item, 'allowConcentration')) return;
     const effects = Array.from(workflow.actor.concentration.effects);
     if (!effects.length) return;
-    genericUtils.notify('CHRISPREMADES.Macros.Modern.All.Concentration', {type: 'warn'});
+    genericUtils.notify('CHRISPREMADES.Macros.All.Rage.Concentration', {type: 'warn'});
     await documentUtils.deleteEmbeddedDocuments(workflow.actor, 'ActiveEffect', effects.map(e => e.id));
 }
-function rageEffect({effect, options, updates}) {
-    const activity = effectUtils.getOriginActivitySync(effect);
-    if (!activity) return;
+async function beginRage({workflow}) {
+    const sourceEffect = workflow.item.effects.contents[0];
+    if (!sourceEffect) return;
     let vae, unhideActivities, specialDuration;
-    const rules = documentUtils.getRules(activity.item) || '2014';
-    const animation = automationUtils.getConfigValue(activity.item, 'animation');
-    const secondActivity = activity.item.system.activities.getByType('utility').find(a => a.id !== activity.id);
-    if (automationUtils.getConfigValue(activity.item, 'allowHeavyArmor'))
-        specialDuration = (effect.flags.cat?.specialDuration ?? []).filter(d => d !== 'heavy');
+    const rules = documentUtils.getRules(workflow.item) || '2014';
+    const animation = automationUtils.getConfigValue(workflow.item, 'animation');
+    const secondActivity = workflow.item.system.activities.getByType('utility').find(a => a.id !== workflow.activity.id);
+    if (automationUtils.getConfigValue(workflow.item, 'allowHeavyArmor'))
+        specialDuration = (sourceEffect.flags.cat?.specialDuration ?? []).filter(d => d !== 'heavy');
     if (secondActivity) {
         vae = [{
             type: 'use',
             name: secondActivity.name,
-            itemIdentifier: activity.item.system.identifier,
+            itemIdentifier: workflow.item.system.identifier,
             activityIdentifier: secondActivity.identifier
         }];
         unhideActivities = [secondActivity.identifier];
     }
-    const configs = dataUtils.buildEffectData({}, {createAnimation: animation, deleteAnimation: animation, unhideActivities, rules, specialDuration, vae});
+    const effectData = documentUtils.getEffectData(workflow.activity, sourceEffect.id, {createAnimation: animation, deleteAnimation: animation, unhideActivities, rules, specialDuration, vae});
     for (const config of ['bonus', 'allowConcentration', 'allowSpellcasting'])
-        genericUtils.setProperty(configs, 'flags.chris-premades.rage.' + config, automationUtils.getConfigValue(activity.item, config));
-    effect.updateSource(configs);
-    automationUtils.calledEventSync('preCreateRageEffect', activity.actor, {
-        canOverlap: true, 
+        genericUtils.setProperty(effectData, 'flags.chris-premades.rage.' + config, automationUtils.getConfigValue(workflow.item, config));
+    const edits = await automationUtils.calledEvent('preCreateRageEffect', workflow.actor, {
+        canOverlap: true, multiResult: true,
         data: {
-            activity, 
-            actor: activity.actor,
-            effect, 
-            options, 
-            rules, 
-            updates
+            activity: workflow.activity, 
+            actor: workflow.actor,
+            effectData,
+            rules,
+            token: workflow.token
         }}
     );
+    for (const edit of edits) genericUtils.mergeObject(effectData, edit, {applyOperators: true});
+    await effectUtils.createEffects(workflow.actor, [effectData]);
 }
-async function rageBegin({effect}) {
+async function rageEffectCreated({effect}) {
     if (!effect) return;
     const activity = await effectUtils.getOriginActivity(effect);
     if (!activity) return;
@@ -82,11 +82,16 @@ export const rage = {
     name: 'Rage',
     version: '2.0.2',
     rules: 'all',
-    notes: 'Use the "actorPreCreateRageEffect" called event (sync) to modify the rage effect.\n\tData available: actor, activity, effect, options, rules, updates.\nUse "actorRageBegin" (async) to respond when rage starts.\n\tData available: actor, activity, effect, token.',
+    notes: 'Use the "actorPreCreateRageEffect" called event (async) to modify the rage effect.\n\tData available: actor, activity, effectData, rules, token.\nUse "actorRageBegin" (async) to respond when rage starts.\n\tData available: actor, activity, effect, token.',
     roll: [
         {
             pass: 'activityPreambleComplete',
             macro: preChecks,
+            priority: 100
+        },   
+        {
+            pass: 'activityRollFinished',
+            macro: beginRage,
             priority: 100
         }
     ],
@@ -156,13 +161,8 @@ export const raging = {
     rules: rage.rules,
     effect: [
         {
-            pass: 'preCreated',
-            macro: rageEffect,
-            priority: 100
-        },
-        {
             pass: 'created',
-            macro: rageBegin,
+            macro: rageEffectCreated,
             priority: 100
         }
     ],
