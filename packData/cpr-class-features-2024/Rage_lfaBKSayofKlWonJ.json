@@ -37,15 +37,7 @@
           "override": false,
           "value": "10"
         },
-        "effects": [
-          {
-            "_id": "sL6Qn1ntvxrhFaYD",
-            "level": {
-              "min": null,
-              "max": null
-            }
-          }
-        ],
+        "effects": [],
         "flags": {
           "cat": {
             "macros": {

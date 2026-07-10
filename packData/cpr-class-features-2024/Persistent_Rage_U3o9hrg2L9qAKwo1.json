@@ -21,6 +21,12 @@
               "value": "1",
               "target": "",
               "scaling": {}
+            },
+            {
+              "type": "itemUses",
+              "value": "-@scale.barbarian.rages",
+              "target": "rage",
+              "scaling": {}
             }
           ],
           "scaling": {
@@ -49,7 +55,7 @@
           "prompt": true,
           "affects": {
             "count": "",
-            "type": "self",
+            "type": "",
             "choice": false,
             "special": ""
           },
@@ -101,7 +107,35 @@
           "autoTargetAction": "default",
           "otherActivityCompatible": false
         },
-        "name": ""
+        "name": "Recover Rages",
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "flags": {
+          "cat": {
+            "macros": {
+              "called": [
+                {
+                  "source": "chris-premades",
+                  "rules": "2024",
+                  "identifier": "persistent-rage"
+                }
+              ],
+              "combat": [
+                {
+                  "source": "chris-premades",
+                  "rules": "2024",
+                  "identifier": "persistent-rage"
+                }
+              ]
+            }
+          }
+        }
       }
     },
     "uses": {
@@ -120,10 +154,10 @@
     },
     "identifier": "persistent-rage",
     "source": {
-      "book": "",
+      "book": "PHB 2024",
       "page": "",
       "license": "",
-      "custom": "PHB 2024",
+      "custom": "",
       "rules": "2024",
       "revision": 1
     },
@@ -144,32 +178,10 @@
   },
   "flags": {
     "dnd5e": {
-      "advancementOrigin": "nwupzjujWuejv7P9",
-      "riders": {
-        "activity": [],
-        "effect": []
-      }
+      "advancementOrigin": "nwupzjujWuejv7P9"
     },
     "cat": {
-      "automation": {
-        "version": "2.0.0"
-      },
-      "macros": {
-        "combat": [
-          {
-            "source": "chris-premades",
-            "rules": "all",
-            "identifier": "persistent-rage"
-          }
-        ],
-        "called": [
-          {
-            "source": "chris-premades",
-            "rules": "all",
-            "identifier": "persistent-rage"
-          }
-        ]
-      }
+      "macros": {}
     }
   },
   "img": "icons/skills/wounds/injury-face-impact-orange.webp",

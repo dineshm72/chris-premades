@@ -1,0 +1,66 @@
+{
+  "name": "Persistent Rage",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "persistent-rage",
+    "source": {
+      "book": "PHB",
+      "page": "",
+      "license": "",
+      "custom": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "advancement": {},
+    "cover": null,
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "level": 15,
+      "repeatable": false,
+      "items": []
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "dnd5e": {
+      "advancementOrigin": "nwupzjujWuejv7P9"
+    },
+    "cat": {
+      "macros": {
+        "called": [
+          {
+            "source": "chris-premades",
+            "rules": "2014",
+            "identifier": "persistent-rage"
+          }
+        ]
+      }
+    }
+  },
+  "img": "icons/skills/wounds/injury-face-impact-orange.webp",
+  "folder": "oHVJeSGqBDErtjs9",
+  "_id": "EaW9rlH6XyRrSX8T",
+  "_key": "!items!EaW9rlH6XyRrSX8T"
+}

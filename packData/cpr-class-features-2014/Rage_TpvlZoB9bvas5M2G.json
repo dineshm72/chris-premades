@@ -37,15 +37,7 @@
           "override": false,
           "value": "1"
         },
-        "effects": [
-          {
-            "_id": "sL6Qn1ntvxrhFaYD",
-            "level": {
-              "min": null,
-              "max": null
-            }
-          }
-        ],
+        "effects": [],
         "flags": {
           "cat": {
             "macros": {
@@ -459,30 +451,30 @@
         },
         "cat": {
           "macros": {
-            "effect": [
-              {
-                "source": "chris-premades",
-                "rules": "all",
-                "identifier": "raging"
-              }
-            ],
-            "roll": [
-              {
-                "source": "chris-premades",
-                "rules": "all",
-                "identifier": "raging"
-              },
-              {
-                "source": "chris-premades",
-                "rules": "2014",
-                "identifier": "keepRage"
-              }
-            ],
             "combat": [
               {
                 "source": "chris-premades",
                 "rules": "2014",
                 "identifier": "keepRage"
+              }
+            ],
+            "roll": [
+              {
+                "source": "chris-premades",
+                "rules": "2014",
+                "identifier": "keepRage"
+              },
+              {
+                "source": "chris-premades",
+                "rules": "all",
+                "identifier": "raging"
+              }
+            ],
+            "effect": [
+              {
+                "source": "chris-premades",
+                "rules": "all",
+                "identifier": "raging"
               }
             ]
           },
