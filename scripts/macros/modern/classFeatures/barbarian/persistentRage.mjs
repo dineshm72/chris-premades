@@ -9,7 +9,6 @@ async function combatStart({document: activity}) {
 // duplicate of 2014 modifyRage - move both to all once getFnMacro is fixed
 async function modifyRage({data}) {
     const effectData = data.effectData;
-    console.log('MODIFY RAGE', data);
     if (!effectData) return;
     const specialDuration = effectData.flags.cat?.specialDuration?.map(d => d === 'incapacitated' ? 'unconscious' : d);
     const removeMacros = [{
