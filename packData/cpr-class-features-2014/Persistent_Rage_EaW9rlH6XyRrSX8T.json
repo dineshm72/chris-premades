@@ -48,6 +48,10 @@
       "advancementOrigin": "nwupzjujWuejv7P9"
     },
     "cat": {
+      "automation": {
+        "source": "chris-premades",
+        "version": "2.0.2"
+      },
       "macros": {
         "called": [
           {

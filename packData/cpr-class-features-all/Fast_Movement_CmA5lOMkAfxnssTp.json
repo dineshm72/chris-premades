@@ -1,87 +1,84 @@
 {
-  "name": "Danger Sense",
+  "name": "Fast Movement",
   "type": "feat",
   "effects": [
     {
-      "name": "Danger Sense",
-      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
-      "origin": "Compendium.chris-premades.CPRClassFeatures2024.Item.9yi0hlkYveN4lSi7",
-      "type": "base",
-      "_id": "zIEnZNl2XrET6Ljm",
+      "name": "Fast Movement",
+      "statuses": [],
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.advantage.save.dex",
-            "type": "custom",
-            "value": "!statuses.incapacitated",
-            "phase": "initial",
-            "priority": null
+            "key": "system.attributes.movement.walk",
+            "value": 10,
+            "type": "add",
+            "priority": 9,
+            "phase": "initial"
           }
         ]
       },
-      "disabled": false,
-      "start": null,
       "duration": {
         "value": null,
         "units": "seconds",
         "expiry": null,
         "expired": false
       },
-      "description": "",
       "tint": "#ffffff",
       "transfer": true,
-      "statuses": [],
+      "disabled": false,
       "showIcon": 1,
-      "folder": null,
-      "sort": 0,
       "flags": {
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
         "dae": {
+          "transfer": true,
+          "stackable": "noneNameOnly",
           "disableCondition": "",
-          "stackable": "noneName",
           "expiryMode": "default",
           "durationExpression": "",
           "macroRepeat": "none",
           "disableIncapacitated": false,
           "specialDuration": []
         },
-        "core": {
-          "overlay": false
+        "cat": {
+          "disableCondition": [
+            "heavy"
+          ]
         }
       },
-      "_key": "!items.effects!9yi0hlkYveN4lSi7.zIEnZNl2XrET6Ljm"
+      "description": "",
+      "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+      "_id": "bG13dHCGCzRSYvMZ",
+      "type": "base",
+      "start": null,
+      "origin": "Actor.vEcivv6DTofI2Lzw.Item.3EQR1Z53U4eYV1pK",
+      "folder": null,
+      "sort": 0,
+      "_key": "!items.effects!CmA5lOMkAfxnssTp.bG13dHCGCzRSYvMZ"
     }
   ],
   "system": {
     "activities": {},
     "uses": {
       "spent": 0,
-      "recovery": [],
-      "max": ""
+      "recovery": []
     },
     "advancement": {},
     "description": {
       "value": "",
       "chat": ""
     },
-    "identifier": "danger-sense",
+    "identifier": "fast-movement",
     "source": {
-      "book": "PHB 2024",
+      "book": "",
       "page": "",
       "license": "",
       "custom": "",
-      "rules": "2024",
+      "rules": "all",
       "revision": 1
     },
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "items": [],
-      "level": 2,
+      "level": 5,
       "repeatable": false
     },
     "properties": [],
@@ -100,8 +97,8 @@
       }
     }
   },
-  "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
-  "folder": "epodEYV6OzWsQdIP",
-  "_id": "9yi0hlkYveN4lSi7",
-  "_key": "!items!9yi0hlkYveN4lSi7"
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "folder": "6kOLcxbW2ABkSv1x",
+  "_id": "CmA5lOMkAfxnssTp",
+  "_key": "!items!CmA5lOMkAfxnssTp"
 }

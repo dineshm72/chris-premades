@@ -39,7 +39,7 @@ async function beginRage({workflow}) {
             actor: workflow.actor,
             effectData,
             rules,
-            token: workflow.token
+            token: workflow.token.document
         }}
     );
     for (const edit of edits) genericUtils.mergeObject(effectData, edit, {applyOperators: true});

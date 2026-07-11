@@ -1,59 +1,52 @@
 {
-  "name": "Danger Sense",
+  "name": "Feral Instinct",
   "type": "feat",
   "effects": [
     {
-      "name": "Danger Sense",
-      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
-      "origin": "Compendium.chris-premades.CPRClassFeatures2024.Item.9yi0hlkYveN4lSi7",
-      "type": "base",
-      "_id": "zIEnZNl2XrET6Ljm",
+      "name": "Feral Instinct",
+      "statuses": [],
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.advantage.save.dex",
-            "type": "custom",
-            "value": "!statuses.incapacitated",
+            "key": "system.attributes.init.roll.mode",
+            "type": "add",
+            "value": 1,
             "phase": "initial",
-            "priority": null
+            "priority": 20
           }
         ]
       },
-      "disabled": false,
-      "start": null,
       "duration": {
         "value": null,
         "units": "seconds",
         "expiry": null,
         "expired": false
       },
-      "description": "",
       "tint": "#ffffff",
       "transfer": true,
-      "statuses": [],
+      "disabled": false,
       "showIcon": 1,
-      "folder": null,
-      "sort": 0,
       "flags": {
-        "dnd5e": {
-          "riders": {
-            "statuses": []
-          }
-        },
         "dae": {
+          "transfer": true,
+          "stackable": "noneNameOnly",
           "disableCondition": "",
-          "stackable": "noneName",
           "expiryMode": "default",
           "durationExpression": "",
           "macroRepeat": "none",
           "disableIncapacitated": false,
           "specialDuration": []
-        },
-        "core": {
-          "overlay": false
         }
       },
-      "_key": "!items.effects!9yi0hlkYveN4lSi7.zIEnZNl2XrET6Ljm"
+      "description": "",
+      "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
+      "_id": "4ibgDcLP3Ak7c4bc",
+      "type": "base",
+      "start": null,
+      "origin": "Actor.vEcivv6DTofI2Lzw.Item.MAojlQZiH8Fwcgkq",
+      "folder": null,
+      "sort": 0,
+      "_key": "!items.effects!3qPwRuLjJpHv8Z7Y.4ibgDcLP3Ak7c4bc"
     }
   ],
   "system": {
@@ -68,20 +61,20 @@
       "value": "",
       "chat": ""
     },
-    "identifier": "danger-sense",
+    "identifier": "feral-instinct",
     "source": {
-      "book": "PHB 2024",
+      "book": "",
       "page": "",
       "license": "",
       "custom": "",
-      "rules": "2024",
+      "rules": "all",
       "revision": 1
     },
     "crewed": false,
     "enchant": {},
     "prerequisites": {
       "items": [],
-      "level": 2,
+      "level": 7,
       "repeatable": false
     },
     "properties": [],
@@ -100,8 +93,8 @@
       }
     }
   },
-  "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
-  "folder": "epodEYV6OzWsQdIP",
-  "_id": "9yi0hlkYveN4lSi7",
-  "_key": "!items!9yi0hlkYveN4lSi7"
+  "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
+  "folder": "6kOLcxbW2ABkSv1x",
+  "_id": "3qPwRuLjJpHv8Z7Y",
+  "_key": "!items!3qPwRuLjJpHv8Z7Y"
 }
