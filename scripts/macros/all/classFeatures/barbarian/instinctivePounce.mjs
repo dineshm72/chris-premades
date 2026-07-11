@@ -10,7 +10,6 @@ async function pounce({workflow}) {
     if (!maxRange) return;
     if (!animation) return await simplePounce(workflow, maxRange);
     const position = await crosshairUtils.aimCrosshair({token: workflow.token.document, maxRange});
-    console.log('POSITION', position);
     animation.macros.play(position, workflow.token);
 }
 async function simplePounce(workflow, movement) {
