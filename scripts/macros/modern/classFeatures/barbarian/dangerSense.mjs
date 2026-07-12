@@ -1,4 +1,4 @@
-export let dangerSense = {
+export const dangerSense = {
     name: 'Danger Sense',
     version: '2.0.2',
     rules: '2024'

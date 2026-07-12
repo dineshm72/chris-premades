@@ -4,6 +4,7 @@ export {dangerSense as 'danger-sense'} from './modern/classFeatures/barbarian/da
 export {extendRage, keepRage} from './modern/classFeatures/barbarian/rage.mjs';
 export {intimidatingPresence as 'intimidating-presence'} from './modern/classFeatures/barbarian/berserker/intimidatingPresence.mjs';
 export {persistentRage as 'persistent-rage'} from './modern/classFeatures/barbarian/persistentRage.mjs';
+export {primalKnowldege as 'primal-knowledge', primalKnowledgeEffect} from './modern/classFeatures/barbarian/primalKnowledge.mjs';
 export {unarguableWizardry as 'unarguable-wizardry'} from './modern/classFeatures/barbarian/muscleWizard/unarguableWizardry.mjs';
 export {aspectOfTheWilds as 'aspect-of-the-wilds'} from './modern/classFeatures/barbarian/wildHeart/aspectOfTheWilds.mjs';
 // Bard
