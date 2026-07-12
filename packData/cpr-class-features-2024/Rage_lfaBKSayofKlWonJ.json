@@ -37,7 +37,12 @@
           "override": false,
           "value": "10"
         },
-        "effects": [],
+        "effects": [
+          {
+            "_id": "sL6Qn1ntvxrhFaYD",
+            "level": {}
+          }
+        ],
         "flags": {
           "cat": {
             "macros": {
@@ -447,7 +452,7 @@
           "disableIncapacitated": false,
           "selfTarget": false,
           "selfTargetAlways": false,
-          "dontApply": false,
+          "dontApply": true,
           "specialDuration": []
         },
         "core": {
