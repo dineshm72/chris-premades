@@ -32,33 +32,17 @@ async function beginRage({workflow}) {
     const effectData = documentUtils.getEffectData(workflow.activity, sourceEffect.id, {createAnimation: animation, deleteAnimation: animation, unhideActivities, rules, specialDuration, vae});
     for (const config of ['bonus', 'allowConcentration', 'allowSpellcasting'])
         genericUtils.setProperty(effectData, 'flags.chris-premades.rage.' + config, automationUtils.getConfigValue(workflow.item, config));
-    const edits = await automationUtils.calledEvent('preCreateRageEffect', workflow.actor, {
-        canOverlap: true, multiResult: true,
-        data: {
-            activity: workflow.activity, 
-            actor: workflow.actor,
-            effectData,
-            rules,
-            token: workflow.token.document
-        }}
-    );
+    const calledData = {
+        activity: workflow.activity, 
+        actor: workflow.actor,
+        rules,
+        token: workflow.token.document
+    };
+    const edits = await automationUtils.calledEvent('preCreateRageEffect', workflow.actor, {canOverlap: true, multiResult: true, data: {effectData, ...calledData}});
     for (const edit of edits) genericUtils.mergeObject(effectData, edit, {applyOperators: true});
-    await effectUtils.createEffects(workflow.actor, [effectData]);
-}
-async function rageEffectCreated({effect}) {
-    if (!effect) return;
-    const activity = await effectUtils.getOriginActivity(effect);
-    if (!activity) return;
-    const token = actorUtils.getFirstToken(activity.actor);
-    await automationUtils.calledEvent('rageBegin', activity.actor, {
-        canOverlap: true, 
-        data: {
-            activity, 
-            actor: activity.actor, 
-            effect,
-            token
-        }
-    });
+    const createdEffect = (await effectUtils.createEffects(workflow.actor, [effectData]))?.[0];
+    if (!createdEffect) return;
+    await automationUtils.calledEvent('rageBegin', workflow.actor, {canOverlap: true, data: {effect: createdEffect, ...calledData}});
 }
 async function spellcasting({document: effect, workflow}) {
     if (workflow.item.type !== 'spell') return;
@@ -82,7 +66,7 @@ export const rage = {
     name: 'Rage',
     version: '2.0.2',
     rules: 'all',
-    notes: 'Use the "actorPreCreateRageEffect" called event (async) to modify the rage effect.\n\tData available: actor, activity, effectData, rules, token.\nUse "actorRageBegin" (async) to respond when rage starts.\n\tData available: actor, activity, effect, token.',
+    notes: 'Use the "actorPreCreateRageEffect" called event (async) to modify the rage effect.\n\tData available: actor, activity, effectData, rules, token.\nUse "actorRageBegin" (async) to respond when rage starts.\n\tData available: actor, activity, effect, rules, token.',
     roll: [
         {
             pass: 'activityPreambleComplete',
@@ -159,13 +143,6 @@ export const raging = {
     name: rage.name,
     version: rage.version,
     rules: rage.rules,
-    effect: [
-        {
-            pass: 'created',
-            macro: rageEffectCreated,
-            priority: 100
-        }
-    ],
     roll: [
         {
             pass: 'actorPreambleComplete',
