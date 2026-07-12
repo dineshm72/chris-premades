@@ -1,4 +1,4 @@
-# 1.5.40 Release:
+# 1.5.41 Release:
 ## Bug Fixes:
 - Battering Roots
 - Heroic Inspiration
