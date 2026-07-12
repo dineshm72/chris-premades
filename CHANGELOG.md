@@ -1,6 +1,8 @@
 # 1.5.40 Release:
 ## Bug Fixes:
 - Battering Roots
+- Heroic Inspiration
+- Turn Undead (legacy, thanks Negan)
 
 # 1.5.40 Release:
 ## Bug Fixes:

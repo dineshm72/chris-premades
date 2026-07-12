@@ -1,7 +1,7 @@
 import {dialogUtils, genericUtils, rollUtils} from '../../../utils.js';
 async function attack(workflow) {
     if (!workflow.attackRoll || !workflow.actor.system.attributes.inspiration) return;
-    let selection = await dialogUtils.selectDie([workflow.attackRoll], 'CHRISPREMADES.HeroicInspiration.Name', genericUtils.format('CHRISPREMADES.Dialog.Use', {itemName: genericUtils.translate('CHRISPREMADES.HeroicInspiration.Name')}), {buttons: 'yesNo'});
+    let selection = await dialogUtils.selectDie([workflow.attackRoll], 'CHRISPREMADES.HeroicInspiration.Name', genericUtils.format('CHRISPREMADES.Dialog.UseAttack', {itemName: genericUtils.translate('CHRISPREMADES.HeroicInspiration.Name'), attackTotal: workflow.attackRoll.total}), {buttons: 'yesNo'});
     if (!selection) return;
     let positions = selection[0].split('-').map(i => Number(i));
     let mode = ((workflow.activity.midiProperties?.rollMode ?? 'default') === 'default') ? game.settings.get('core', 'rollMode') : workflow.activity.midiProperties?.rollMode;
