@@ -37,7 +37,7 @@ export {stalkersFlurry as 'stalkers-flurry'} from './modern/classFeatures/ranger
 export {tireless} from './modern/classFeatures/ranger/tireless.mjs';
 // Rogue
 export {improvedCunningStrike as 'improved-cunning-strike'} from './modern/classFeatures/rogue/improvedCunningStrike.mjs';
-export {sneakAttack as 'sneak-attack'} from './modern/classFeatures/rogue/sneak-attack.mjs';
+export {sneakAttack as 'sneak-attack'} from './modern/classFeatures/rogue/sneakAttack.mjs';
 export {steadyAim as 'steady-aim'} from './modern/classFeatures/rogue/steadyAim.mjs';
 // ** Spells
 export {chromaticOrb as 'chromatic-orb'} from './modern/spells/chromaticOrb.mjs';

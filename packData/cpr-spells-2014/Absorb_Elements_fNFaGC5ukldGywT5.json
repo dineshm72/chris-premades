@@ -1,0 +1,3933 @@
+{
+  "name": "Absorb Elements",
+  "type": "spell",
+  "_id": "fNFaGC5ukldGywT5",
+  "img": "icons/magic/lightning/orb-ball-purple.webp",
+  "system": {
+    "activities": {
+      "kdFxO9qAPdEmiJ7L": {
+        "type": "utility",
+        "name": "Acid",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "value": "2"
+        },
+        "effects": [
+          {
+            "_id": "NPArcFqxKGU16ayx",
+            "level": {}
+          },
+          {
+            "_id": "FmShdBSB0XIQpGbC",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "reaction == 'isDamaged' && workflow.damageDetail.find(d => d.type == 'acid')",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "skipConcentrationCheck": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "_id": "kdFxO9qAPdEmiJ7L",
+        "img": "icons/magic/acid/projectile-faceted-glob.webp",
+        "useConditionReason": "",
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
+      },
+      "8lZ6cKzISQbqfEd9": {
+        "type": "utility",
+        "name": "Cold",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "value": "2"
+        },
+        "effects": [
+          {
+            "_id": "Qbggj1SH69rZjfyH",
+            "level": {}
+          },
+          {
+            "_id": "tCiHrWUKfdPm9niX",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "reaction == 'isDamaged' && workflow.damageDetail.find(d => d.type == 'cold')",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "skipConcentrationCheck": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "_id": "8lZ6cKzISQbqfEd9",
+        "img": "icons/magic/air/wind-tornado-wall-blue.webp",
+        "useConditionReason": "",
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
+      },
+      "Ou6k8MxGg67LEsed": {
+        "type": "utility",
+        "name": "Fire",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "value": "2"
+        },
+        "effects": [
+          {
+            "_id": "ogU8CIDSZc5aQY2i",
+            "level": {}
+          },
+          {
+            "_id": "JXKrsIr6JxwVNEUC",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "reaction == 'isDamaged' && workflow.damageDetail.find(d => d.type == 'fire')",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "autoCEEffects": "none",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "skipConcentrationCheck": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "_id": "Ou6k8MxGg67LEsed",
+        "img": "icons/magic/fire/beam-jet-stream-embers.webp",
+        "useConditionReason": "",
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
+      },
+      "PU48xO09E4rD3VIG": {
+        "type": "utility",
+        "name": "Lightning",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "value": "2"
+        },
+        "effects": [
+          {
+            "_id": "61L86HIsWDgPKN3Y",
+            "level": {}
+          },
+          {
+            "_id": "yCsvmxxxLteBKZTd",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "reaction == 'isDamaged' && workflow.damageDetail.find(d => d.type == 'lightning')",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "skipConcentrationCheck": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "_id": "PU48xO09E4rD3VIG",
+        "img": "icons/magic/lightning/bolt-blue.webp",
+        "useConditionReason": "",
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
+      },
+      "4cCTS5Num00bP9Wf": {
+        "type": "utility",
+        "name": "Thunder",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "round",
+          "concentration": false,
+          "override": true,
+          "value": "2"
+        },
+        "effects": [
+          {
+            "_id": "iKqE83lvddNzuxsR",
+            "level": {}
+          },
+          {
+            "_id": "JUfGfWqfQolFVpws",
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "reaction == 'isDamaged' && workflow.damageDetail.find(d => d.type == 'thunder')",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": false,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "skipConcentrationCheck": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "_id": "4cCTS5Num00bP9Wf",
+        "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+        "useConditionReason": "",
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
+      }
+    },
+    "uses": {
+      "spent": null,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "absorb-elements",
+    "source": {
+      "revision": 1,
+      "rules": "2014",
+      "book": "XGE",
+      "page": "150",
+      "custom": "",
+      "license": ""
+    },
+    "activation": {
+      "type": "reaction",
+      "value": 1,
+      "condition": "when you take acid, cold, fire, lightning, or thunder damage"
+    },
+    "duration": {
+      "units": "round",
+      "value": "1"
+    },
+    "level": 1,
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "method": "spell",
+    "properties": [
+      "somatic"
+    ],
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "school": "abj",
+    "target": {
+      "template": {
+        "contiguous": false,
+        "units": "ft",
+        "count": "",
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "stationary": false
+      },
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "self",
+        "special": ""
+      }
+    },
+    "ability": "",
+    "prepared": 1
+  },
+  "effects": [
+    {
+      "name": "Absorb Elements: Acid Damage",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-strong-green.webp",
+      "origin": "Actor.o8MuQHTGRGySM9ng.Item.HA8lK5tyjtnvN2wz",
+      "_id": "FmShdBSB0XIQpGbC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "+(@spellLevel)d6[acid]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnEndSource",
+            "1Hit:mwak"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.OlpzXlK4yzsmDmci"
+            },
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.WoZuMpRqUis1kr9M"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.FmShdBSB0XIQpGbC"
+    },
+    {
+      "name": "Absorb Elements: Cold Damage",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-strong-blue-yellow.webp",
+      "origin": "Actor.o8MuQHTGRGySM9ng.Item.HA8lK5tyjtnvN2wz",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "+(@spellLevel)d6[cold]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnEndSource",
+            "1Hit:mwak"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "tCiHrWUKfdPm9niX",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.tCiHrWUKfdPm9niX"
+    },
+    {
+      "name": "Absorb Elements: Fire Damage",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-strong-red.webp",
+      "origin": "Actor.o8MuQHTGRGySM9ng.Item.HA8lK5tyjtnvN2wz",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "+(@spellLevel)d6[fire]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnEndSource",
+            "1Hit:mwak"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.TdBcdyDs227v1KbL"
+            },
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.OENxYTvJ6AqwF9II"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "JXKrsIr6JxwVNEUC",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.JXKrsIr6JxwVNEUC"
+    },
+    {
+      "name": "Absorb Elements: Thunder Damage",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-strong-purple-pink.webp",
+      "origin": "Actor.o8MuQHTGRGySM9ng.Item.HA8lK5tyjtnvN2wz",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "+(@spellLevel)d6[thunder]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnEndSource",
+            "1Hit:mwak"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "JUfGfWqfQolFVpws",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.JUfGfWqfQolFVpws"
+    },
+    {
+      "name": "Absorb Elements: Acid Resistance",
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-acid.webp",
+      "origin": "Item.EumGolPUB2feozAs",
+      "_id": "NPArcFqxKGU16ayx",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnStartSource"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.3YQWjjhwO7dLoWst"
+            },
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.s7rZrF4pNuk6v9ys"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.NPArcFqxKGU16ayx"
+    },
+    {
+      "name": "Absorb Elements: Fire Resistance",
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-red.webp",
+      "origin": "Item.EumGolPUB2feozAs",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnStartSource"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.Fzdxrc4QhMQo59at.ActiveEffect.HJa1O1ApnkyhuKJL"
+            },
+            {
+              "uuid": "Actor.Fzdxrc4QhMQo59at.ActiveEffect.G92b8z6FzHhwvgGE"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "ogU8CIDSZc5aQY2i",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.ogU8CIDSZc5aQY2i"
+    },
+    {
+      "name": "Absorb Elements: Cold Resistance",
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp",
+      "origin": "Item.EumGolPUB2feozAs",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnStartSource"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.OC8ZJNRwH9Fs388l"
+            },
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.BWkD516oltZRbzSF"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "Qbggj1SH69rZjfyH",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.Qbggj1SH69rZjfyH"
+    },
+    {
+      "name": "Absorb Elements: Lightning Resistance",
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+      "origin": "Item.EumGolPUB2feozAs",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnStartSource"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.rtUHNsKV8JkWpi3V"
+            },
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.4nHljrgTkgY44yYx"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "yCsvmxxxLteBKZTd",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.yCsvmxxxLteBKZTd"
+    },
+    {
+      "name": "Absorb Elements: Thunder Resistance",
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-magenta.webp",
+      "origin": "Item.EumGolPUB2feozAs",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnStartSource"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.0rj6mGGVynf74zqA"
+            },
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.U1Y2zAQxiYoCCMOY"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "iKqE83lvddNzuxsR",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.iKqE83lvddNzuxsR"
+    },
+    {
+      "name": "Absorb Elements: Lightning Damage",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-strong-blue.webp",
+      "origin": "Actor.o8MuQHTGRGySM9ng.Item.HA8lK5tyjtnvN2wz",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "+(@spellLevel)d6[lightning]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "autoanimations": {
+          "id": "5ad017c4-0307-46b7-93b3-e561d5038c93",
+          "label": "Absorb Elements",
+          "levels3d": {
+            "enable": true,
+            "type": "castingsign",
+            "data": {
+              "autoSize": true,
+              "spritePath": "modules/levels-3d-preview/assets/particles/magiccircles/magic_circle_07.webp",
+              "color01": "#00ff2a",
+              "color02": "#00ffbf",
+              "duration": 1500,
+              "life": 400,
+              "alpha": 1,
+              "onCenter": true
+            },
+            "secondary": {
+              "enable": true,
+              "data": {
+                "autoSize": true,
+                "spritePath": "jb2a.markers.bubble.loop.rainbow",
+                "type": "mysteriouslights",
+                "onCenter": true,
+                "color01": "#3197a5",
+                "color02": "#0affce"
+              }
+            },
+            "sound": {
+              "delay": 0,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Damage/Ice/ice-blast-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "tokens": {
+              "enable": true,
+              "source": true,
+              "target": true,
+              "sourceType": "twirl",
+              "sourcePlay": "start",
+              "targetType": "buff",
+              "targetPlay": "end"
+            }
+          },
+          "macro": {
+            "enable": false,
+            "playWhen": "0"
+          },
+          "meleeSwitch": {
+            "video": {
+              "dbSection": "range",
+              "menuType": "weapon",
+              "animation": "arrow",
+              "variant": "regular",
+              "color": "regular"
+            },
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "startTime": 0,
+              "volume": 0.75
+            },
+            "options": {
+              "detect": "automatic",
+              "range": 2,
+              "returning": false,
+              "switchType": "on"
+            }
+          },
+          "menu": "ontoken",
+          "primary": {
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": false,
+              "opacity": 1,
+              "persistent": false,
+              "playOn": "source",
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 500,
+              "enable": true,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Whoosh/spell-whoosh-15.mp3",
+              "startTime": 0,
+              "volume": 0.1,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "marker",
+              "animation": "energystrand",
+              "variant": "01",
+              "color": "purple",
+              "enableCustom": false
+            }
+          },
+          "secondary": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 250,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": true,
+              "isWait": false,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 0,
+              "size": 1.5,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "soundOnly": {
+            "sound": {
+              "enable": false,
+              "delay": 0,
+              "startTime": 0,
+              "volume": 0.75,
+              "repeat": 1,
+              "repeatDelay": 250
+            }
+          },
+          "source": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isRadius": false,
+              "isWait": true,
+              "opacity": 1,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "modules/dnd5e-animations/assets/sounds/Spells/Buff/spell-buff-build-up-2.mp3",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "target": {
+            "enable": false,
+            "options": {
+              "addTokenWidth": false,
+              "anchor": "0.5",
+              "delay": 0,
+              "elevation": 1000,
+              "fadeIn": 250,
+              "fadeOut": 500,
+              "isMasked": false,
+              "isWait": false,
+              "isRadius": false,
+              "opacity": 1,
+              "persistent": false,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "size": 1,
+              "unbindAlpha": false,
+              "unbindVisibility": false,
+              "zIndex": 1
+            },
+            "sound": {
+              "delay": 0,
+              "enable": false,
+              "file": "",
+              "startTime": 0,
+              "repeat": 1,
+              "repeatDelay": 250,
+              "volume": 0.75
+            },
+            "video": {
+              "dbSection": "static",
+              "menuType": "spell",
+              "animation": "curewounds",
+              "variant": "01",
+              "color": "blue",
+              "enableCustom": false,
+              "customPath": ""
+            }
+          },
+          "isEnabled": true,
+          "isCustomized": true,
+          "fromAmmo": false,
+          "version": 5
+        },
+        "dae": {
+          "disableCondition": "",
+          "disableIncapacitated": false,
+          "stackable": "noneName",
+          "showIcon": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "turnEndSource",
+            "1Hit:mwak"
+          ],
+          "enableCondition": "",
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false
+        },
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          },
+          "dependents": [
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.ruLxmpP5PpfDCBRc"
+            },
+            {
+              "uuid": "Actor.o8MuQHTGRGySM9ng.ActiveEffect.9ZvWXQWFjKMCA453"
+            }
+          ]
+        },
+        "core": {
+          "overlay": false
+        }
+      },
+      "_id": "61L86HIsWDgPKN3Y",
+      "start": null,
+      "showIcon": 1,
+      "folder": null,
+      "_key": "!items.effects!fNFaGC5ukldGywT5.61L86HIsWDgPKN3Y"
+    }
+  ],
+  "folder": null,
+  "flags": {
+    "dnd5e": {
+      "last": {
+        "addElemenDamage1": {
+          "damageType": {
+            "0": "fire"
+          }
+        }
+      },
+      "riders": {
+        "activity": []
+      },
+      "-=riders": null
+    },
+    "midi-qol": {
+      "removeAttackDamageButtons": "default",
+      "forceCEOff": true,
+      "rollAttackPerTarget": "default",
+      "itemCondition": "",
+      "reactionCondition": "",
+      "otherCondition": "",
+      "effectCondition": ""
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "magicdam": true,
+      "magiceffect": true,
+      "autoFailFriendly": false,
+      "autoSaveFriendly": false,
+      "noConcentrationCheck": false,
+      "toggleEffect": false,
+      "ignoreTotalCover": false
+    },
+    "scene-packer": {
+      "sourceId": "Item.AbsorbElementsII",
+      "hash": "0b092751ff2eab33b1d2de0aa484b5a4a7e00ae0"
+    },
+    "cat": {
+      "macros": {}
+    }
+  },
+  "_key": "!items!fNFaGC5ukldGywT5"
+}
