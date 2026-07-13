@@ -12,7 +12,7 @@ async function modifyRage({data}) {
 export const persistentRage = {
     name: 'Persistent Rage',
     version: '2.0.2',
-    rules: '2014',
+    rules: 'all',
     called: [
         {
             pass: 'actorPreCreateRageEffect',

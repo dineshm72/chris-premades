@@ -119,17 +119,17 @@
         "flags": {
           "cat": {
             "macros": {
-              "called": [
+              "combat": [
                 {
                   "source": "chris-premades",
                   "rules": "2024",
                   "identifier": "persistent-rage"
                 }
               ],
-              "combat": [
+              "called": [
                 {
                   "source": "chris-premades",
-                  "rules": "2024",
+                  "rules": "all",
                   "identifier": "persistent-rage"
                 }
               ]
