@@ -1,6 +1,5 @@
 // ** Class Features
 // Barbarian
-export {dangerSense as 'danger-sense'} from './modern/classFeatures/barbarian/dangerSense.mjs';
 export {extendRage, keepRage} from './modern/classFeatures/barbarian/rage.mjs';
 export {intimidatingPresence as 'intimidating-presence'} from './modern/classFeatures/barbarian/berserker/intimidatingPresence.mjs';
 export {persistentRage as 'persistent-rage'} from './modern/classFeatures/barbarian/persistentRage.mjs';
