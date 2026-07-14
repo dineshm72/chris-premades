@@ -7,7 +7,7 @@ async function save({actor, config, document: item, options, saveId}) {
     if (actor.statuses.some(s => statuses.includes(s))) return;
     return {label: 'CHRISPREMADES.Macros.Legacy.DangerSense', type: 'advantage'};
 }
-export let dangerSense = {
+export const dangerSense = {
     name: 'Danger Sense',
     version: '2.0.2',
     rules: '2014',
@@ -22,14 +22,14 @@ export let dangerSense = {
         saves: {
             default: ['dex'],
             type: 'select-many',
-            options: () => Object.entries(CONFIG.DND5E.abilities).map(([value, {label, icon: image}]) => ({value, label, image})), // TODO replace with constants, pending Tyler's PR
+            options: () => constants.abilityOptions(),
             label: 'CHRISPREMADES.Config.SaveAbilities',
             category: 'behavior'
         },
         conditions: {
             default: ['blinded', 'deafened', 'incapacitated'],
             type: 'select-many',
-            options: () => Object.entries(CONFIG.DND5E.conditionTypes).map(([value, {name: label, img: image}]) => ({value, label, image})) , // TODO replace with constants
+            options: () => constants.statusOptions(),
             label: 'CHRISPREMADES.Config.BlockingConditions',
             category: 'behavior'
         }
