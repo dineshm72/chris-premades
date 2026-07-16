@@ -16,9 +16,9 @@ async function beginRage({workflow}) {
     if (!sourceEffect) return;
     let vae, unhideActivities, specialDuration;
     const rules = documentUtils.getRules(workflow.item) || '2014';
-    const animation = automationUtils.getConfigValue(workflow.item, 'animation');
+    const config = automationUtils.getConfigValues(workflow.item, ['animation', 'bonus', 'allowConcentration', 'allowHeavyArmor', 'allowSpellcasting']);
     const secondActivity = workflow.item.system.activities.getByType('utility').find(a => a.id !== workflow.activity.id);
-    if (automationUtils.getConfigValue(workflow.item, 'allowHeavyArmor'))
+    if (config.allowHeavyArmor)
         specialDuration = (sourceEffect.flags.cat?.specialDuration ?? []).filter(d => d !== 'heavy');
     if (secondActivity) {
         vae = [{
@@ -29,9 +29,8 @@ async function beginRage({workflow}) {
         }];
         unhideActivities = [secondActivity.identifier];
     }
-    const effectData = documentUtils.getEffectData(workflow.activity, sourceEffect.id, {createAnimation: animation, deleteAnimation: animation, unhideActivities, rules, specialDuration, vae});
-    for (const config of ['bonus', 'allowConcentration', 'allowSpellcasting'])
-        genericUtils.setProperty(effectData, 'flags.chris-premades.rage.' + config, automationUtils.getConfigValue(workflow.item, config));
+    const effectData = documentUtils.getEffectData(workflow.activity, sourceEffect.id, {createAnimation: config.animation, deleteAnimation: config.animation, unhideActivities, rules, specialDuration, vae});
+    genericUtils.setProperty(effectData, 'flags.chris-premades.rage', config);
     const calledData = {
         activity: workflow.activity, 
         actor: workflow.actor,
@@ -111,7 +110,13 @@ export const rage = {
         bonus: {
             default: '@scale.barbarian.rage-damage',
             type: 'text',
-            label: 'CHRISPREMADES.Config.Formula',
+            label: 'CHRISPREMADES.Config.DamageBonus',
+            category: 'behavior'
+        },
+        classIdentifier: {
+            default: 'barbarian',
+            type: 'text',
+            label: 'CHRISPREMADES.Config.ClassIdentifier',
             category: 'behavior'
         }
     },

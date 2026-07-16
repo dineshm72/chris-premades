@@ -26,6 +26,12 @@ export const brutalCritical = {
             type: 'text',
             label: 'CHRISPREMADES.Config.Formula',
             category: 'behavior'
+        },
+        classIdentifier: {
+            default: 'barbarian',
+            type: 'text',
+            label: 'CHRISPREMADES.Config.ClassIdentifier',
+            category: 'behavior'
         }
     },
     scales: [
