@@ -446,7 +446,7 @@
           "enableCondition": "",
           "disableCondition": "",
           "stackable": "none",
-          "expiryMode": "default",
+          "expiryMode": "delete",
           "durationExpression": "",
           "macroRepeat": "none",
           "disableIncapacitated": false,

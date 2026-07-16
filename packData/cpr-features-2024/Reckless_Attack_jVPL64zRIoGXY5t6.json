@@ -51,7 +51,7 @@
           "enableCondition": "",
           "disableCondition": "",
           "stackable": "noneName",
-          "expiryMode": "default",
+          "expiryMode": "delete",
           "durationExpression": "",
           "macroRepeat": "none",
           "disableIncapacitated": false,

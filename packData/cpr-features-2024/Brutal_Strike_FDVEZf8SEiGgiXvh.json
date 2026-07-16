@@ -33,7 +33,7 @@
           "specialDuration": [],
           "enableCondition": "",
           "disableCondition": "",
-          "expiryMode": "default",
+          "expiryMode": "delete",
           "durationExpression": "",
           "macroRepeat": "none",
           "disableIncapacitated": false,
@@ -453,7 +453,7 @@
   "flags": {
     "dnd5e": {},
     "cat": {
-      "automation":{
+      "automation": {
         "source": "chris-premades",
         "version": "2.0.2"
       },
