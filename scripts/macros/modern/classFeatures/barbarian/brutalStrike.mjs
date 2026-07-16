@@ -39,10 +39,8 @@ async function doStrike({workflow}) {
     if (!workflow.hitTargets.size) return;
     const activities = workflowUtils.getWorkflowProperty(workflow, 'brutalStrikesActivities');
     if (!activities) return;
-    for (let i = 0; i < activities.length; i++) {
-        const userId = queryUtils.firstOwner(activities[i].actor, true);
-        await workflowUtils.syntheticActivityRoll(activities[i], workflow.hitTargets, {consumeResources: i === 0, userId});
-    }
+    for (let i = 0; i < activities.length; i++) 
+        await workflowUtils.completeActivityUse(activities[i], workflow.hitTargets, {consumeResources: i === 0});
 }
 async function forcefulBlowPush({document: activity, workflow}) {
     const distanceFormula = automationUtils.getConfigValue(activity.item, 'push');
