@@ -139,7 +139,8 @@
           "oncePerTurn": true,
           "wallRestriction": "none",
           "regionVisibility": 2,
-          "rules": []
+          "rules": [],
+          "attachToken": "default"
         },
         "regionLight": {
           "enabled": false,
@@ -286,7 +287,8 @@
           "oncePerTurn": true,
           "wallRestriction": "none",
           "regionVisibility": 2,
-          "rules": []
+          "rules": [],
+          "attachToken": "default"
         },
         "regionLight": {
           "enabled": false,
@@ -433,7 +435,8 @@
           "oncePerTurn": true,
           "wallRestriction": "none",
           "regionVisibility": 2,
-          "rules": []
+          "rules": [],
+          "attachToken": "default"
         },
         "regionLight": {
           "enabled": false,
@@ -580,7 +583,8 @@
           "oncePerTurn": true,
           "wallRestriction": "none",
           "regionVisibility": 2,
-          "rules": []
+          "rules": [],
+          "attachToken": "default"
         },
         "regionLight": {
           "enabled": false,
@@ -727,7 +731,8 @@
           "oncePerTurn": true,
           "wallRestriction": "none",
           "regionVisibility": 2,
-          "rules": []
+          "rules": [],
+          "attachToken": "default"
         },
         "regionLight": {
           "enabled": false,
@@ -3926,7 +3931,11 @@
       "hash": "0b092751ff2eab33b1d2de0aa484b5a4a7e00ae0"
     },
     "cat": {
-      "macros": {}
+      "macros": {},
+      "automation": {
+        "source": "chris-premades",
+        "version": "2.0.2"
+      }
     }
   },
   "_key": "!items!fNFaGC5ukldGywT5"

@@ -95,6 +95,7 @@
                 "Purple": "Purple",
                 "Rainbow": "Rainbow",
                 "Random": "Random",
+                "Red": "Red",
                 "Yellow": "Yellow"
             },
             "CombatOnly": "Only Enable When in Combat",
@@ -221,6 +222,7 @@
                     "SelectNearbyTargets": "Select targets.",
                     "Weapon": "Attack with what weapon?"
                 },
+                "ConsumeItemToUse": "Consume {item} to use this feature?",
                 "MovementAnimation": {
                     "MoveAnimation": "Move Animation",
                     "MovementEffect": "Movement Effect",
@@ -229,10 +231,12 @@
                 "MultiSingleTarget": {
                     "Context": "How many? (Max: {totalTargets})",
                     "Reaction": "Use a reaction?"
-                },
-                "ConsumeItemToUse": "Consume {item} to use this feature?"
+                }
             },
             "Legacy": {
+                "AcidArrow": {
+                    "HalfDamage": "Missed Target Damage"
+                },
                 "ChaosBolt": {
                     "AlwaysBounce": "Always Bounce"
                 },
@@ -246,21 +250,21 @@
                     "NoSpellSlots": "You have no expended spell slots to restore!"
                 },
                 "BrutalStrike": {
-                    "Use": "Sacrifice advantage to use {item}?",
-                    "Choice": "Choice Count"
+                    "Choice": "Choice Count",
+                    "Use": "Sacrifice advantage to use {item}?"
                 },
                 "ChromaticOrb": {
                     "BaseMaxJumps": "Base Max Jumps",
                     "TargetDamageSelection": "Select Damage Type For Each Target"
+                },
+                "GreaterDivineIntervention": {
+                    "RestFormula": "Rest Recovery Formula"
                 },
                 "Rage": {
                     "EndEarly": "{actorName} has not attacked an enemy, forced an enemy to make a save, or continued their rage since their last turn. Remove Rage?"
                 },
                 "RendMind": {
                     "RestoreAndUse": "Restore and use {item}?"
-                },
-                "GreaterDivineIntervention": {
-                    "RestFormula": "Rest Recovery Formula"
                 },
                 "SneakAttack": {
                     "Auto": "Automatically Use",
@@ -274,8 +278,8 @@
                     "Prompt": "Unarguable Wizardry"
                 },
                 "WildResurgence": {
-                    "WildShapeUses": "You still have Wild Shape uses remaining!",
-                    "NoSpellSlots": "You have no expended spell slots to restore!"
+                    "NoSpellSlots": "You have no expended spell slots to restore!",
+                    "WildShapeUses": "You still have Wild Shape uses remaining!"
                 }
             }
         }
