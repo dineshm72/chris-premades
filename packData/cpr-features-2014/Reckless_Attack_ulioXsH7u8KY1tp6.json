@@ -115,6 +115,9 @@
         },
         "core": {
           "overlay": false
+        },
+        "cat": {
+          "identifier": "recklessAttackEffect"
         }
       },
       "_key": "!items.effects!ulioXsH7u8KY1tp6.Ackd1KmH9F5CK44T"

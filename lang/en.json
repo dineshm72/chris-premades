@@ -245,6 +245,10 @@
                 "Archdruid": {
                     "NoSpellSlots": "You have no expended spell slots to restore!"
                 },
+                "BrutalStrike": {
+                    "Use": "Sacrifice advantage to use {item}?",
+                    "Choice": "Choice Count"
+                },
                 "ChromaticOrb": {
                     "BaseMaxJumps": "Base Max Jumps",
                     "TargetDamageSelection": "Select Damage Type For Each Target"
