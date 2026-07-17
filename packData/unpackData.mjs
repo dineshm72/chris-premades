@@ -10,6 +10,7 @@ let itemPacks = [
     'cpr-spells-2024',
     'cpr-equipment-2024',
     'cpr-misc-2024',
+    'cpr-features-all',
     'cpr-embedded-macro-sample-items'
 ];
 let actorPacks = [

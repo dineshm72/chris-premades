@@ -602,7 +602,7 @@
       "automation": {
         "source": "chris-premades",
         "version": "2.0.2"
-      },
+      }
     }
   },
   "img": "icons/skills/melee/strike-axe-blood-red.webp",
