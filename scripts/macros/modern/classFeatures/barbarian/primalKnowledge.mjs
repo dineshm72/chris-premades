@@ -39,14 +39,14 @@ export const primalKnowldege = {
             type: 'select',
             category: 'behavior',
             label: 'CHRISPREMADES.Config.Ability',
-            options: () => constants.abilityOptions()
+            get options() { return constants.abilityOptions(); }
         },
         skills: {
             default: ['acr', 'itm', 'prc', 'ste', 'sur'],
             type: 'select-many',
             category: 'behavior',
             label: 'CHRISPREMADES.Config.Skills',
-            options: () => constants.skillOptions()
+            get options() { return constants.skillOptions(); }
         }
     }
 };

@@ -49,7 +49,7 @@ export const indomitableMight = {
             type: 'select',
             category: 'behavior',
             label: 'CHRISPREMADES.Config.Ability',
-            options: () => constants.abilityOptions()
+            get options() { return constants.abilityOptions(); }
         }
     }
 };
