@@ -4,6 +4,7 @@ export {aspectOfTheWilds as 'aspect-of-the-wilds'} from './modern/classFeatures/
 export {brutalStrike as 'brutal-strike', forcefulBlow} from './modern/classFeatures/barbarian/brutalStrike.mjs';
 export {extendRage, keepRage} from './modern/classFeatures/barbarian/rage.mjs';
 export {improvedBrutalStrike as 'improved-brutal-strike', sunderingBlow} from './modern/classFeatures/barbarian/improvedBrutalStrike.mjs';
+export {indomitableMight as 'indomitable-might'} from './modern/classFeatures/barbarian/imdomitableMight.mjs';
 export {intimidatingPresence as 'intimidating-presence'} from './modern/classFeatures/barbarian/berserker/intimidatingPresence.mjs';
 export {persistentRage as 'persistent-rage'} from './modern/classFeatures/barbarian/persistentRage.mjs';
 export {primalKnowldege as 'primal-knowledge', primalKnowledgeEffect} from './modern/classFeatures/barbarian/primalKnowledge.mjs';
