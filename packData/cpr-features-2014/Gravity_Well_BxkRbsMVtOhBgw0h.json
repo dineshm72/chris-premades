@@ -1,0 +1,56 @@
+{
+  "name": "Gravity Well",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": []
+    },
+    "advancement": [],
+    "description": {
+      "value": "<p>You understand how to manipulate the lines of gravitational force. Whenever you cast a spell that hits a creature with a spell attack, forces a creature to fail a saving throw, or targets an ally, you can move one affected creature up to 5 feet.</p>",
+      "chat": ""
+    },
+    "identifier": "gravity-well",
+    "source": {
+      "book": "EGtW",
+      "page": "",
+      "license": "",
+      "custom": "Wizard : Graviturgy Magic",
+      "rules": "2014",
+      "revision": 1
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "level": 3,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "cat": {
+      "macros": {
+        "roll": [
+          {
+            "source": "chris-premades",
+            "rules": "2014",
+            "identifier": "gravity-well"
+          }
+        ]
+      }
+    }
+  },
+  "img": "icons/magic/unholy/orb-beam-pink.webp",
+  "folder": "jKrhZq22E49LdIVg",
+  "_id": "BxkRbsMVtOhBgw0h",
+  "_key": "!items!BxkRbsMVtOhBgw0h"
+}

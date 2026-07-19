@@ -4,3 +4,5 @@ export {instinctivePounce as 'instinctive-pounce'} from './all/classFeatures/bar
 export {persistentRage as 'persistent-rage'} from './all/classFeatures/barbarian/persistentRage.mjs';
 export {rage, raging} from './all/classFeatures/barbarian/rage.mjs';
 export {relentlessRage as 'relentless-rage'} from './all/classFeatures/barbarian/relentlessRage.mjs';
+// Spells
+export {animateDead as 'animate-dead'} from './all/spells/animateDead.mjs';

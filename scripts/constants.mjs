@@ -16,7 +16,8 @@ const packs = {
         misc: 'chris-premades.CPRMisc2024'
     },
     all: {
-        features: 'chris-premades.CPRFeaturesAll'
+        features: 'chris-premades.CPRFeaturesAll',
+        spells: 'chris-premades.CPRSpellsAll'
     },
     samples: {
         embeddedMacros: 'chris-premades.CPREmbeddedMacroSampleItems'
