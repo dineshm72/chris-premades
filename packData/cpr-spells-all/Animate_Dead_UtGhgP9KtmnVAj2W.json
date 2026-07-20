@@ -6,9 +6,12 @@
       "chat": ""
     },
     "source": {
-      "custom": "Basic Rules, Player's Handbook pg 212",
+      "custom": "",
       "revision": 1,
-      "rules": "2014"
+      "rules": "all",
+      "book": "",
+      "page": "",
+      "license": ""
     },
     "activation": {
       "type": "minute",
@@ -114,16 +117,32 @@
           "formula": ""
         },
         "useConditionText": "",
-        "forceDialog": false,
         "effectConditionText": "",
         "name": "Command",
         "img": "icons/magic/death/undead-skeleton-energy-green.webp",
-        "midiAutomationOnly": false,
-        "appliedEffects": [],
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
         "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "automationOnly": false,
           "identifier": "animateDeadCommand",
           "displayActivityName": true
         },
+        "appliedEffects": [],
         "flags": {
           "cat": {
             "hidden": true
@@ -181,12 +200,28 @@
           "formula": ""
         },
         "useConditionText": "",
-        "forceDialog": false,
         "effectConditionText": "",
         "name": "Summon",
         "img": "icons/magic/death/undead-skeleton-energy-green.webp",
-        "midiAutomationOnly": false,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
         "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "automationOnly": false,
           "identifier": "animateDead",
           "displayActivityName": true
         }
@@ -244,14 +279,14 @@
         "roll": [
           {
             "source": "chris-premades",
-            "rules": "2014",
+            "rules": "all",
             "identifier": "animate-dead"
           }
         ],
         "summon": [
           {
             "source": "chris-premades",
-            "rules": "2014",
+            "rules": "all",
             "identifier": "animate-dead"
           }
         ]
@@ -269,6 +304,6 @@
   "effects": [],
   "img": "icons/magic/death/undead-skeleton-energy-green.webp",
   "folder": null,
-  "_id": "xzaSENSrhnYcXFfi",
-  "_key": "!items!xzaSENSrhnYcXFfi"
+  "_id": "UtGhgP9KtmnVAj2W",
+  "_key": "!items!UtGhgP9KtmnVAj2W"
 }
