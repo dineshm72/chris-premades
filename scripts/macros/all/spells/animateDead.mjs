@@ -8,8 +8,8 @@ async function getMonsterActor(name) {
     return game.actors.getName(name);
 }
 async function toggleCommand(item, visible) {
-    if (visible) await itemUtils.unhideActivities(item, ['animateDeadCommand'], {favorite: true});
-    else await itemUtils.rehideActivities(item, ['animateDeadCommand'], {favorite: true});
+    if (visible) await itemUtils.unhideActivities(item, ['animateDeadCommand']);
+    else await itemUtils.rehideActivities(item, ['animateDeadCommand']);
 }
 async function use({document: item, workflow}) {
     if (workflow.activity.identifier !== 'animateDead') return;
@@ -22,15 +22,9 @@ async function use({document: item, workflow}) {
     let totalSummons = 1 + ((workflowUtils.getCastLevel(workflow) ?? 3) - 3) * 2;
     if (actorUtils.getItemByIdentifier(workflow.actor, 'undead-thralls')) totalSummons += 1;
     if (totalSummons < 1) return;
-    const fields = [
-        {label: zombieActor.name, name: 'zombie', options: {minAmount: 0, maxAmount: totalSummons, weight: 1}},
-        {label: skeletonActor.name, name: 'skeleton', options: {minAmount: 0, maxAmount: totalSummons, weight: 1}}
-    ];
-    const selection = await dialogUtils.selectAmounts(item.name, _loc('CHRISPREMADES.Summons.SelectSummons', {totalSummons}), fields, {totalMax: totalSummons});
+    const selection = await dialogUtils.selectDocumentDialog(item.name, _loc('CHRISPREMADES.Summons.SelectSummons', {totalSummons}), [zombieActor, skeletonActor], {max: totalSummons, combobox: true});
     if (!selection) return;
-    const chosen = [];
-    for (let i = 0; i < (selection.zombie || 0); i++) chosen.push(zombieActor);
-    for (let i = 0; i < (selection.skeleton || 0); i++) chosen.push(skeletonActor);
+    const chosen = (Array.isArray(selection) ? selection : [{document: selection, amount: 1}]).flatMap(({document, amount}) => Array(amount).fill(document));
     if (!chosen.length) return;
     const animation = automationUtils.getConfigValue(item, 'animation');
     const disposition = workflow.token?.document.disposition;

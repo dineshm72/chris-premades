@@ -1,12 +1,8 @@
 import {actorUtils, automationUtils, dialogUtils, rollUtils} from '../../../../proxy.mjs';
 async function use({workflow}) {
     const formula = automationUtils.getConfigValue(workflow.item, 'formula');
-    const bonusIdentifiers = ['arcaneGrimoire1', 'arcaneGrimoire2', 'arcaneGrimoire3', 'grimoireInfinitus1', 'grimoireInfinitus2', 'grimoireInfinitus3'];
-    let bonus = 0;
-    for (const identifier of bonusIdentifiers) {
-        const item = actorUtils.getItemByIdentifier(workflow.actor, identifier);
-        if (item) bonus += automationUtils.getConfigValue(item, 'bonus') ?? 0;
-    }
+    const bonuses = await automationUtils.calledEvent('arcaneRecoveryBonus', workflow.actor, {multiResult: true, canOverlap: true, data: {workflow}}) ?? [];
+    const bonus = bonuses.reduce((total, value) => total + (value.bonus ?? 0), 0);
     const spells = workflow.actor.system.spells;
     const totalSlots = (await rollUtils.rollDice(formula + ' + ' + bonus, {document: workflow.activity})).total;
     const availableLevels = [];

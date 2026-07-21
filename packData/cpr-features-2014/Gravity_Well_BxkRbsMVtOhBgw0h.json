@@ -10,7 +10,7 @@
     },
     "advancement": [],
     "description": {
-      "value": "<p>You understand how to manipulate the lines of gravitational force. Whenever you cast a spell that hits a creature with a spell attack, forces a creature to fail a saving throw, or targets an ally, you can move one affected creature up to 5 feet.</p>",
+      "value": "",
       "chat": ""
     },
     "identifier": "gravity-well",
