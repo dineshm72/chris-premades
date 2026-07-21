@@ -83,6 +83,7 @@
             "BaseDiceNumber": "Base Dice Number",
             "BaseHealing": "Base Healing",
             "BlockingConditions": "Blocking Conditions",
+            "Bonus": "Bonus",
             "CanCrit": "Can Crit",
             "Character": "Character",
             "CheckHit": "Check Hit",
