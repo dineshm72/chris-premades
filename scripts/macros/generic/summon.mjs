@@ -16,7 +16,8 @@ async function use({document, workflow}) {
     const placeActivityId = automationUtils.getGenericConfigValue(document, 'chris-premades', 'summon', 'placeActivityId');
     const recallActivityId = automationUtils.getGenericConfigValue(document, 'chris-premades', 'summon', 'recallActivityId');
     const otherActivityIdentifiers = [placeActivityId, recallActivityId].map(id => document.system.activities.get(id)).filter(Boolean).map(activity => documentUtils.getIdentifier(activity));
-    if (otherActivityIdentifiers.length) await itemUtils.unhideActivities(document, otherActivityIdentifiers);
+    const favorite = automationUtils.getGenericConfigValue(document, 'chris-premades', 'summon', 'favorite') ?? false;
+    if (otherActivityIdentifiers.length) await itemUtils.unhideActivities(document, otherActivityIdentifiers, {favorite});
     if (workflow.token) await summonUtils.placeSummons(summons, workflow.activity.range.value, {token: workflow.token.document});
 }
 async function place({document, workflow}) {
@@ -38,7 +39,8 @@ async function deleted({document, summon}) {
     const recallActivityId = automationUtils.getGenericConfigValue(document, 'chris-premades', 'summon', 'recallActivityId');
     const otherActivityIdentifiers = [placeActivityId, recallActivityId].map(id => document.system.activities.get(id)).filter(Boolean).map(activity => documentUtils.getIdentifier(activity));
     if (!otherActivityIdentifiers.length) return;
-    await itemUtils.rehideActivities(document, otherActivityIdentifiers);
+    const favorite = automationUtils.getGenericConfigValue(document, 'chris-premades', 'summon', 'favorite') ?? false;
+    await itemUtils.rehideActivities(document, otherActivityIdentifiers, {favorite});
 }
 export const summon = {
     rules: 'all',
@@ -93,6 +95,12 @@ export const summon = {
             default: [],
             type: 'selectSummons',
             label: 'CHRISPREMADES.Config.Summons',
+            hint: ''
+        },
+        favorite: {
+            default: false,
+            type: 'checkbox',
+            label: 'CHRISPREMADES.Config.FavoriteActivities',
             hint: ''
         }
     }

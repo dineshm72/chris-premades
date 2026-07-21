@@ -43,9 +43,9 @@
       "discord": "sayshal"
     }
   ],
-  "esmodules":[
-        "dist/main.js"
-    ],
+  "esmodules": [
+    "dist/main.js"
+  ],
   "styles": [
     "styles/module.css"
   ],
@@ -144,6 +144,13 @@
       "module": "chris-premades"
     },
     {
+      "name": "CPRSpellsAll",
+      "label": "CPR Spells (All Rules)",
+      "path": "packs/cpr-spells-all",
+      "type": "Item",
+      "module": "chris-premades"
+    },
+    {
       "name": "CPRSpells2014",
       "label": "CPR Spells (2014)",
       "path": "packs/cpr-spells-2014",
@@ -204,7 +211,8 @@
           "sorting": "a",
           "color": "#348f2d",
           "packs": [
-            "CPRFeaturesAll"
+            "CPRFeaturesAll",
+            "CPRSpellsAll"
           ]
         },
         {

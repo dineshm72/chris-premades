@@ -41,5 +41,8 @@ export {tireless} from './modern/classFeatures/ranger/tireless.mjs';
 export {improvedCunningStrike as 'improved-cunning-strike'} from './modern/classFeatures/rogue/improvedCunningStrike.mjs';
 export {sneakAttack as 'sneak-attack'} from './modern/classFeatures/rogue/sneakAttack.mjs';
 export {steadyAim as 'steady-aim'} from './modern/classFeatures/rogue/steadyAim.mjs';
+// Wizard
+export {arcaneRecovery as 'arcane-recovery'} from './modern/classFeatures/wizard/arcaneRecovery.mjs';
+export {memorizeSpell as 'memorize-spell'} from './modern/classFeatures/wizard/memorizeSpell.mjs';
 // ** Spells
 export {chromaticOrb as 'chromatic-orb'} from './modern/spells/chromaticOrb.mjs';

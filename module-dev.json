@@ -158,6 +158,13 @@
       "module": "chris-premades"
     },
     {
+      "name": "CPRSpellsAll",
+      "label": "CPR Spells (All Rules)",
+      "path": "packs/cpr-spells-all",
+      "type": "Item",
+      "module": "chris-premades"
+    },
+    {
       "name": "CPREquipment2014",
       "label": "CPR Equipment (2014)",
       "path": "packs/cpr-equipment-2014",
@@ -204,7 +211,8 @@
           "sorting": "a",
           "color": "#348f2d",
           "packs": [
-            "CPRFeaturesAll"
+            "CPRFeaturesAll",
+            "CPRSpellsAll"
           ]
         },
         {

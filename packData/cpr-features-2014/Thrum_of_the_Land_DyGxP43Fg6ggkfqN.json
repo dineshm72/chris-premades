@@ -1,0 +1,68 @@
+{
+  "name": "Thrum of the Land",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "advancement": [],
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "identifier": "thrum-of-the-land",
+    "source": {
+      "book": "HWT",
+      "page": "",
+      "license": "",
+      "custom": "",
+      "rules": "2014",
+      "revision": 1
+    },
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "level": 3,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    }
+  },
+  "flags": {
+    "dnd5e": {
+      "advancementOrigin": "Onp60tEaMLu1Dko2",
+      "riders": {
+        "activity": []
+      }
+    },
+    "cat": {
+      "macros": {
+        "roll": [
+          {
+            "source": "chris-premades",
+            "rules": "2014",
+            "identifier": "thrum-of-the-land"
+          }
+        ]
+      }
+    }
+  },
+  "img": "icons/magic/nature/leaf-drip-light-green.webp",
+  "folder": "MRJmz2jwnCOjB3QV",
+  "_id": "DyGxP43Fg6ggkfqN",
+  "_key": "!items!DyGxP43Fg6ggkfqN"
+}
