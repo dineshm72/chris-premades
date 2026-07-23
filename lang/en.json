@@ -250,7 +250,7 @@
                     "ItemTypeHint": "Limit this feature to certain item types.",
                     "MatchTarget": "Match Target",
                     "NeutralTarget": "Neutral",
-                    "RangeFromHint": "Which token from which to measure range.",
+                    "RangeFromHint": "The token from which to measure range.",
                     "RollActivity": "Roll this activity when used.",
                     "RollItem": "Roll this item when used.",
                     "TargetHint": "Any value less than one will count as unlimited."
